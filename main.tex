@@ -20,13 +20,13 @@
 
 % Compress inter-word spacing
 \fontdimen2\font=2pt  % inter-word space
-\fontdimen3\font=1pt  % inter-word stretch
+\fontdimen3\font=-1pt  % inter-word stretch
 \fontdimen4\font=1pt  % inter-word shrink
 \fontdimen7\font=1pt  % extra space
 
 % Define a custom smaller font size
 \makeatletter
-\newcommand{\tinyfont}{\@setfontsize\tinyfont{4pt}{5pt}}
+\newcommand{\tinyfont}{\@setfontsize\tinyfont{4pt}{2pt}}
 \makeatother
 
 % Replace \scriptsize with \tinyfont in document where needed
@@ -81,6 +81,7 @@
 }
 
 \begin{document}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Title page
 \input{sections/titlepage}
@@ -106,13 +107,15 @@
 \input{sections/merge_sort}
 \hfill
 \input{sections/priority_queue}\\
-
-% Fourth row - Data Structures
 \input{sections/heap}
-\hfill
-\input{sections/linked_list}
-\vfill
-
+\input{sections/operations_summary}\\
 \input{sections/binary_search_tree}
+\hfill
+\input{sections/dynamic_programming}
+
+\input{sections/longest_common_subsequence}
+\input{sections/optimal_binary_search_tree}
+\input{sections/linked_list}
+
 
 \end{document} 

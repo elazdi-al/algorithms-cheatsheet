@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.17)  28 MAR 2025 16:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.17)  30 MAR 2025 10:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -571,18 +571,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--40
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 28--99
+Underfull \hbox (badness 10000) in paragraph at lines 28--100
 
  []
 
 (./sections/stack_operations.tex
-Underfull \hbox (badness 1389) in paragraph at lines 22--22
-\OT1/cmr/m/n/5 (+20) 1. If Stack-Empty(S), re-turn er-ror
+Underfull \hbox (badness 1490) in paragraph at lines 22--22
+\OT1/cmr/bx/n/5 (+20) Stack-Empty(S): \OT1/cmr/m/it/5 (+20) Time: O(1), Space:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--22
-
+Underfull \hbox (badness 1389) in paragraph at lines 22--22
+\OT1/cmr/m/n/5 (+20) 1. If Stack-Empty(S), re-turn er-ror
  []
 
 
@@ -600,12 +600,7 @@ Underfull \hbox (badness 4467) in paragraph at lines 56--56
 \OT1/cmr/m/it/5 (+20) Time Com-plex-ity: $\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (+20) (\OML/cmm/m/it/5 n[]\OT1/cmr/m/n/5 (+20) ) \OMS/cmsy/m/n/5 ^^Y
  []
 
-) (./sections/queue_operations.tex
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
-
- []
-
-) (./sections/merge_sort.tex
+) (./sections/queue_operations.tex) (./sections/merge_sort.tex
 <images/merge-sort.png, id=15, 722.19812pt x 199.74625pt>
 File: images/merge-sort.png Graphic file (type png)
 <use images/merge-sort.png>
@@ -641,18 +636,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--26
 
  []
 
-)
-Overfull \hbox (93.11528pt too wide) in paragraph at lines 29--109
-[][]   [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--109
-
- []
-
-(./sections/heap.tex
-Overfull \hbox (21.4204pt too wide) in paragraph at lines 79--79
+) (./sections/heap.tex
+Overfull \hbox (20.52051pt too wide) in paragraph at lines 79--79
 [][]
  []
 
@@ -660,84 +645,652 @@ Overfull \hbox (21.4204pt too wide) in paragraph at lines 79--79
 File: images/heapify.png Graphic file (type png)
 <use images/heapify.png>
 Package pdftex.def Info: images/heapify.png  used on input line 79.
-(pdftex.def)             Requested size: 80.82994pt x 74.09258pt.
+(pdftex.def)             Requested size: 73.48137pt x 67.35623pt.
 <images/heap-insert.png, id=18, 308.15125pt x 108.405pt>
 File: images/heap-insert.png Graphic file (type png)
 <use images/heap-insert.png>
 Package pdftex.def Info: images/heap-insert.png  used on input line 79.
-(pdftex.def)             Requested size: 80.82994pt x 28.4344pt.
+(pdftex.def)             Requested size: 73.48137pt x 25.849pt.
 <images/heap-increase-key.png, id=19, 394.47375pt x 171.64125pt>
 File: images/heap-increase-key.png Graphic file (type png)
 <use images/heap-increase-key.png>
 Package pdftex.def Info: images/heap-increase-key.png  used on input line 79.
-(pdftex.def)             Requested size: 80.82994pt x 35.16833pt.
+(pdftex.def)             Requested size: 73.48137pt x 31.97311pt.
 <images/build-max-heap.png, id=20, 298.11375pt x 106.3975pt>
 File: images/build-max-heap.png Graphic file (type png)
 <use images/build-max-heap.png>
 Package pdftex.def Info: images/build-max-heap.png  used on input line 79.
-(pdftex.def)             Requested size: 80.82994pt x 28.84784pt.
+(pdftex.def)             Requested size: 73.48137pt x 26.22589pt.
 <images/heapsort.png, id=21, 326.21875pt x 141.52875pt>
 File: images/heapsort.png Graphic file (type png)
 <use images/heapsort.png>
 Package pdftex.def Info: images/heapsort.png  used on input line 79.
-(pdftex.def)             Requested size: 80.82994pt x 35.0668pt.
+(pdftex.def)             Requested size: 73.48137pt x 31.8793pt.
+) (./sections/operations_summary.tex
+Overfull \hbox (4.44269pt too wide) in paragraph at lines 108--108
+[]|\OT1/cmr/bx/n/5 (-20) Space| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Queue-
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Returns TRUE if
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+\OT1/cmr/m/n/5 (+20) queue is empty,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Enqueue(Q,
+ []
+
+
+Underfull \hbox (badness 6910) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Removes and re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+
+ []
+
+
+Overfull \hbox (4.44269pt too wide) in paragraph at lines 108--108
+[]|\OT1/cmr/bx/n/5 (-20) Space| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) List-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+\OT1/cmr/m/n/5 (+20) Search(L,
+ []
+
+
+Underfull \hbox (badness 5374) in paragraph at lines 108--108
+\OT1/cmr/m/n/5 (+20) k, NULL if not
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) List-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+\OT1/cmr/m/n/5 (+20) Insert(L,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) List-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+\OT1/cmr/m/n/5 (+20) Delete(L,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Removes node x
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|$\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (+20) (\OML/cmm/m/it/5 n\OT1/cmr/m/n/5 (+20) )$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+\OT1/cmr/m/n/5 (+20) find,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (+20) (1)$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+
+ []
+
+
+Overfull \hbox (4.44269pt too wide) in paragraph at lines 108--108
+[]|\OT1/cmr/bx/n/5 (-20) Space| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Max-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+\OT1/cmr/m/n/5 (+20) Heapify(A,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Maintains max-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Build-Max-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Heap-
+ []
+
+
+Overfull \hbox (2.66992pt too wide) in paragraph at lines 108--108
+[]|$\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (-20) (\OML/cmm/m/it/5 n [] n\OT1/cmr/m/n/5 (-20) )$| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Max-Heap-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+\OT1/cmr/m/n/5 (+20) Insert(A,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Heap-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+\OT1/cmr/m/n/5 (+20) Extract-
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Returns and re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Heap-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+\OT1/cmr/m/n/5 (+20) Increase-
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 108--108
+\OT1/cmr/m/n/5 (+20) in-dex i to new
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+
+ []
+
+
+Overfull \hbox (4.44269pt too wide) in paragraph at lines 108--108
+[]|\OT1/cmr/bx/n/5 (-20) Space| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Stack-
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Returns TRUE if
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+\OT1/cmr/m/n/5 (+20) stack is empty,
+ []
+
+
+Underfull \hbox (badness 6910) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Removes and re-
+ []
+
+
+Overfull \hbox (4.44269pt too wide) in paragraph at lines 108--108
+[]|\OT1/cmr/bx/n/5 (-20) Space| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) BST-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+\OT1/cmr/m/n/5 (+20) Search(T,
+ []
+
+
+Overfull \hbox (0.74849pt too wide) in paragraph at lines 108--108
+[]|$\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (-20) (\OML/cmm/m/it/5 h\OT1/cmr/m/n/5 (-20) )$| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) BST-
+ []
+
+
+Overfull \hbox (2.60947pt too wide) in paragraph at lines 108--108
+\OT1/cmr/m/n/5 (-20) Minimum(T)| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) BST-
+ []
+
+
+Overfull \hbox (3.80045pt too wide) in paragraph at lines 108--108
+\OT1/cmr/m/n/5 (-20) Maximum(T)| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) BST-
+ []
+
+
+Overfull \hbox (1.24147pt too wide) in paragraph at lines 108--108
+\OT1/cmr/m/n/5 (-20) Successor(x)| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) BST-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+\OT1/cmr/m/n/5 (+20) Insert(T,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) BST-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+\OT1/cmr/m/n/5 (+20) Delete(T,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Removes node z
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) BST-
+ []
+
+
+Overfull \hbox (0.74849pt too wide) in paragraph at lines 108--108
+[]|$\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (-20) (\OML/cmm/m/it/5 h\OT1/cmr/m/n/5 (-20) )$| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) BST-
+ []
+
+
+Underfull \hbox (badness 1394) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Visits root be-fore
+ []
+
+
+Overfull \hbox (0.74849pt too wide) in paragraph at lines 108--108
+[]|$\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (-20) (\OML/cmm/m/it/5 h\OT1/cmr/m/n/5 (-20) )$| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) BST-
+ []
+
+
+Overfull \hbox (3.13344pt too wide) in paragraph at lines 108--108
+\OT1/cmr/m/n/5 (-20) Postorder(T)| 
+ []
+
+
+Overfull \hbox (0.74849pt too wide) in paragraph at lines 108--108
+[]|$\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (-20) (\OML/cmm/m/it/5 h\OT1/cmr/m/n/5 (-20) )$| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+
+ []
+
+
+Overfull \hbox (4.44269pt too wide) in paragraph at lines 108--108
+[]|\OT1/cmr/bx/n/5 (-20) Space| 
+ []
+
+
+Overfull \hbox (2.77962pt too wide) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (-20) Maximum(S)| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Returns el-e-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Extract-
+ []
+
+
+Underfull \hbox (badness 6910) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Removes and re-
+ []
+
+
+Overfull \hbox (2.32956pt too wide) in paragraph at lines 108--108
+[]|$\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (-20) ([] \OML/cmm/m/it/5 n\OT1/cmr/m/n/5 (-20) )$| 
+ []
+
+
+Underfull \hbox (badness 2189) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Inserts el-e-ment x
+ []
+
+
+Overfull \hbox (2.32956pt too wide) in paragraph at lines 108--108
+[]|$\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (-20) ([] \OML/cmm/m/it/5 n\OT1/cmr/m/n/5 (-20) )$| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\OT1/cmr/m/n/5 (+20) Increase-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+\OT1/cmr/m/n/5 (+20) Key(S, x,
+ []
+
+
+Overfull \hbox (2.32956pt too wide) in paragraph at lines 108--108
+[]|$\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (-20) ([] \OML/cmm/m/it/5 n\OT1/cmr/m/n/5 (-20) )$| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+
+ []
+
+) (./sections/binary_search_tree.tex
+<images/bst-search.png, id=22, 556.0775pt x 249.93375pt>
+File: images/bst-search.png Graphic file (type png)
+<use images/bst-search.png>
+Package pdftex.def Info: images/bst-search.png  used on input line 168.
+(pdftex.def)             Requested size: 96.87611pt x 43.54074pt.
+<images/bst-minimum.png, id=23, 228.855pt x 131.49126pt>
+File: images/bst-minimum.png Graphic file (type png)
+<use images/bst-minimum.png>
+Package pdftex.def Info: images/bst-minimum.png  used on input line 168.
+(pdftex.def)             Requested size: 56.98553pt x 32.7403pt.
+<images/bst-maximum.png, id=24, 228.855pt x 131.49126pt>
+File: images/bst-maximum.png Graphic file (type png)
+<use images/bst-maximum.png>
+Package pdftex.def Info: images/bst-maximum.png  used on input line 168.
+(pdftex.def)             Requested size: 56.98553pt x 32.7403pt.
+<images/bst-successor.png, id=25, 339.2675pt x 203.76125pt>
+File: images/bst-successor.png Graphic file (type png)
+<use images/bst-successor.png>
+Package pdftex.def Info: images/bst-successor.png  used on input line 168.
+(pdftex.def)             Requested size: 91.1772pt x 54.75821pt.
+<images/bst-inorder.png, id=26, 344.28625pt x 138.5175pt>
+File: images/bst-inorder.png Graphic file (type png)
+<use images/bst-inorder.png>
+Package pdftex.def Info: images/bst-inorder.png  used on input line 168.
+(pdftex.def)             Requested size: 91.1772pt x 36.6837pt.
+<images/bst-preorder.png, id=27, 326.21875pt x 124.465pt>
+File: images/bst-preorder.png Graphic file (type png)
+<use images/bst-preorder.png>
+Package pdftex.def Info: images/bst-preorder.png  used on input line 168.
+(pdftex.def)             Requested size: 91.1772pt x 34.78728pt.
+
+
+LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <4> not available
+(Font)              size <5> substituted on input line 168.
+
+
+Overfull \hbox (68.38333pt too wide) in paragraph at lines 168--168
+ [][] 
+ []
+
+<images/bst-postorder.png, id=28, 332.24126pt x 124.465pt>
+File: images/bst-postorder.png Graphic file (type png)
+<use images/bst-postorder.png>
+Package pdftex.def Info: images/bst-postorder.png  used on input line 168.
+(pdftex.def)             Requested size: 91.1772pt x 34.15675pt.
+<images/bst-transplant.png, id=29, 222.8325pt x 242.9075pt>
+File: images/bst-transplant.png Graphic file (type png)
+<use images/bst-transplant.png>
+Package pdftex.def Info: images/bst-transplant.png  used on input line 168.
+(pdftex.def)             Requested size: 45.58774pt x 49.69257pt.
+<images/bst-delete.png, id=30, 816.04875pt x 578.16pt>
+File: images/bst-delete.png Graphic file (type png)
+<use images/bst-delete.png>
+Package pdftex.def Info: images/bst-delete.png  used on input line 168.
+(pdftex.def)             Requested size: 91.1772pt x 64.59468pt.
+) (./sections/dynamic_programming.tex
+<images/fib-memoized.png, id=31, 1180.41pt x 375.4025pt>
+File: images/fib-memoized.png Graphic file (type png)
+<use images/fib-memoized.png>
+Package pdftex.def Info: images/fib-memoized.png  used on input line 69.
+(pdftex.def)             Requested size: 191.95323pt x 61.04514pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
+
+ []
+
+<images/fib-bottom-up.png, id=32, 595.22375pt x 343.2825pt>
+File: images/fib-bottom-up.png Graphic file (type png)
+<use images/fib-bottom-up.png>
+Package pdftex.def Info: images/fib-bottom-up.png  used on input line 69.
+(pdftex.def)             Requested size: 86.37836pt x 49.81396pt.
+<images/rod-memoized.png, id=33, 1077.02374pt x 359.3425pt>
+File: images/rod-memoized.png Graphic file (type png)
+<use images/rod-memoized.png>
+Package pdftex.def Info: images/rod-memoized.png  used on input line 69.
+(pdftex.def)             Requested size: 191.95323pt x 64.04282pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
+
+ []
+
+<images/rod-bottom-up.png, id=34, 448.67625pt x 334.24875pt>
+File: images/rod-bottom-up.png Graphic file (type png)
+<use images/rod-bottom-up.png>
+Package pdftex.def Info: images/rod-bottom-up.png  used on input line 69.
+(pdftex.def)             Requested size: 95.97661pt x 71.49486pt.
+<images/matrix-bottom-up.png, id=35, 831.105pt x 602.25pt>
+File: images/matrix-bottom-up.png Graphic file (type png)
+<use images/matrix-bottom-up.png>
+Package pdftex.def Info: images/matrix-bottom-up.png  used on input line 69.
+(pdftex.def)             Requested size: 115.1731pt x 83.45059pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
+
+ []
+
+)
+Overfull \hbox (3.13377pt too wide) in paragraph at lines 29--115
+[][]   [] 
+ []
+
+
+Overfull \hbox (90.03197pt too wide) in paragraph at lines 29--115
+[]  [] 
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 29--115
+[]
+ []
+
+
+Overfull \hbox (12.96661pt too wide) in paragraph at lines 29--115
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--115
+
+ []
+
+[1 <./images/insertion-sort.png> <./images/max-subarray.png> <./images/max-subarray-crossing.png> <./images/merge-sort.png> <./images/merge.png> <./images/heapify.png> <./images/heap-insert.png> <./images/heap-increase-key.png> <./images/build-max-heap.png> <./images/heapsort.png>] (./sections/longest_common_subsequence.tex
+<images/lcs-length.png, id=55, 427.5975pt x 403.5075pt>
+File: images/lcs-length.png Graphic file (type png)
+<use images/lcs-length.png>
+Package pdftex.def Info: images/lcs-length.png  used on input line 39.
+(pdftex.def)             Requested size: 96.74066pt x 91.29015pt.
+
+Underfull \hbox (badness 3108) in paragraph at lines 39--39
+\OML/cmm/m/it/5 c\OT1/cmr/m/n/5 (+20) [0\OML/cmm/m/it/5 :::m; \OT1/cmr/m/n/5 (+20) 0\OML/cmm/m/it/5 :::n\OT1/cmr/m/n/5 (+20) ]$ and di-rec-
+ []
+
+
+Underfull \hbox (badness 1655) in paragraph at lines 39--39
+\OT1/cmr/m/n/5 (+20) - Ta-ble $\OML/cmm/m/it/5 c\OT1/cmr/m/n/5 (+20) [\OML/cmm/m/it/5 m; n\OT1/cmr/m/n/5 (+20) ]$ con-tains
+ []
+
+
+Overfull \hbox (16.12323pt too wide) in paragraph at lines 39--39
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+
+ []
+
+<images/print-lcs.png, id=56, 350.30875pt x 252.945pt>
+File: images/print-lcs.png Graphic file (type png)
+<use images/print-lcs.png>
+Package pdftex.def Info: images/print-lcs.png  used on input line 39.
+(pdftex.def)             Requested size: 72.55519pt x 52.38669pt.
+<images/lcs-table.png, id=57, 695.59875pt x 407.5225pt>
+File: images/lcs-table.png Graphic file (type png)
+<use images/lcs-table.png>
+Package pdftex.def Info: images/lcs-table.png  used on input line 39.
+(pdftex.def)             Requested size: 80.61743pt x 47.22786pt.
+
+Underfull \hbox (badness 1596) in paragraph at lines 39--39
+\OT1/cmr/m/n/5 (+20) - Re-cur-sively trace back
+ []
+
+
+Underfull \hbox (badness 1286) in paragraph at lines 39--39
+\OT1/cmr/bx/n/5 (+20) Example Record-ing of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 39--39
+\OT1/cmr/m/n/5 (+20) to $\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (+20) ([](\OML/cmm/m/it/5 m; n\OT1/cmr/m/n/5 (+20) ))$ if only
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+
+ []
+
+) (./sections/optimal_binary_search_tree.tex
+Underfull \hbox (badness 2158) in paragraph at lines 29--29
+[]\OT1/cmr/bx/n/5 (+20) Problem: \OT1/cmr/m/n/5 (+20) Con-struct a BST with min-i-mum
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[]\OT1/cmr/m/n/5 (+20) Input: Keys $\OML/cmm/m/it/5 K[]; [] ; K[]$\OT1/cmr/m/n/5 (+20) , prob-a-bil-i-ties
+ []
+
+<images/optimal-bst.png, id=58, 619.31375pt x 361.35pt>
+File: images/optimal-bst.png Graphic file (type png)
+<use images/optimal-bst.png>
+Package pdftex.def Info: images/optimal-bst.png  used on input line 29.
+(pdftex.def)             Requested size: 134.9631pt x 78.74738pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+
+ []
+
 ) (./sections/linked_list.tex
-<images/list-search.png, id=22, 379.4175pt x 212.795pt>
+<images/list-search.png, id=59, 379.4175pt x 212.795pt>
 File: images/list-search.png Graphic file (type png)
 <use images/list-search.png>
 Package pdftex.def Info: images/list-search.png  used on input line 55.
 (pdftex.def)             Requested size: 66.4031pt x 37.23967pt.
-<images/list-insert.png, id=23, 278.03876pt x 252.945pt>
+<images/list-insert.png, id=60, 278.03876pt x 252.945pt>
 File: images/list-insert.png Graphic file (type png)
 <use images/list-insert.png>
 Package pdftex.def Info: images/list-insert.png  used on input line 55.
 (pdftex.def)             Requested size: 66.4031pt x 60.41084pt.
-<images/list-delete.png, id=24, 333.245pt x 252.945pt>
+<images/list-delete.png, id=61, 333.245pt x 252.945pt>
 File: images/list-delete.png Graphic file (type png)
 <use images/list-delete.png>
 Package pdftex.def Info: images/list-delete.png  used on input line 55.
 (pdftex.def)             Requested size: 66.4031pt x 50.39897pt.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 79--114
-
- []
-
-(./sections/binary_search_tree.tex
-
-LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 96.
-
-<images/bst-search.png, id=25, 556.0775pt x 249.93375pt>
-File: images/bst-search.png Graphic file (type png)
-<use images/bst-search.png>
-Package pdftex.def Info: images/bst-search.png  used on input line 96.
-(pdftex.def)             Requested size: 96.87611pt x 43.54074pt.
-<images/bst-minimum.png, id=26, 228.855pt x 131.49126pt>
-File: images/bst-minimum.png Graphic file (type png)
-<use images/bst-minimum.png>
-Package pdftex.def Info: images/bst-minimum.png  used on input line 96.
-(pdftex.def)             Requested size: 56.98553pt x 32.7403pt.
-<images/bst-maximum.png, id=27, 228.855pt x 131.49126pt>
-File: images/bst-maximum.png Graphic file (type png)
-<use images/bst-maximum.png>
-Package pdftex.def Info: images/bst-maximum.png  used on input line 96.
-(pdftex.def)             Requested size: 56.98553pt x 32.7403pt.
-<images/bst-successor.png, id=28, 339.2675pt x 203.76125pt>
-File: images/bst-successor.png Graphic file (type png)
-<use images/bst-successor.png>
-Package pdftex.def Info: images/bst-successor.png  used on input line 96.
-(pdftex.def)             Requested size: 91.1772pt x 54.75821pt.
-)
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 96--117
-[][]
+Overfull \hbox (4.96642pt too wide) in paragraph at lines 39--119
+[][]  []  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--117
+Underfull \hbox (badness 10000) in paragraph at lines 39--119
 
  []
 
-[1 <./images/insertion-sort.png> <./images/max-subarray.png> <./images/max-subarray-crossing.png> <./images/merge-sort.png> <./images/merge.png> <./images/heapify.png> <./images/heap-insert.png> <./images/heap-increase-key.png> <./images/build-max-heap.png> <./images/heapsort.png> <./images/list-search.png> <./images/list-insert.png> <./images/list-delete.png>] [2 <./images/bst-search.png> <./images/bst-minimum.png> <./images/bst-maximum.png> <./images/bst-successor.png>] (./main.aux)
+[2{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./images/bst-search.png> <./images/bst-minimum.png> <./images/bst-maximum.png> <./images/bst-successor.png> <./images/bst-inorder.png> <./images/bst-preorder.png> <./images/bst-postorder.png> <./images/bst-transplant.png> <./images/bst-delete.png> <./images/fib-memoized.png> <./images/fib-bottom-up.png> <./images/rod-memoized.png> <./images/rod-bottom-up.png> <./images/matrix-bottom-up.png> <./images/lcs-length.png> <./images/print-lcs.png> <./images/lcs-table.png> <./images/optimal-bst.png> <./images/list-search.png> <./images/list-insert.png> <./images/list-delete.png>] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -749,18 +1302,18 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 7898 strings out of 474116
- 127250 string characters out of 5743682
- 1990187 words of memory out of 5000000
- 30037 multiletter control sequences out of 15000+600000
- 569100 words of font info for 118 fonts, out of 8000000 for 9000
+ 8049 strings out of 474116
+ 131639 string characters out of 5743682
+ 2029187 words of memory out of 5000000
+ 30159 multiletter control sequences out of 15000+600000
+ 569541 words of font info for 126 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,13n,65p,997b,558s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb>
-Output written on main.pdf (3 pages, 1587978 bytes).
+ 57i,15n,65p,997b,558s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb>
+Output written on main.pdf (3 pages, 2814852 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 138 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 35414 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 35484 words of extra memory for PDF output out of 35830 (max. 10000000)
 

@@ -1,17 +1,6 @@
 \fbox{\begin{minipage}[t]{1\textwidth}
     \scriptsize
-    \textbf{Binary Search Trees (BST)}\\[2pt]
-    \textbf{Properties:}
-    \begin{minipage}[t]{0.65\textwidth}
-        \begin{itemize}
-        \item[-] Left subtree: all keys < node's key
-        \item[-] Right subtree: all keys > node's key
-        \item[-] Left and right subtrees are also BSTs
-        \item[-] A \textbf{Node} has: \textbf{key} (value), \textbf{left} \& \textbf{right} (child pointers), \textbf{parent} (optional)
-        \end{itemize}
-    \end{minipage}
-    \vspace{2pt}
-    
+    \textbf{Binary Search Trees (BST)}\\[2pt]    
     \begin{minipage}[t]{0.19\textwidth}
         \centering
         \textbf{\scriptsize BST-Search}\\[2pt]
@@ -25,8 +14,8 @@
             5. If key > root's key, search right
         \end{minipage}\\[3pt]
         \includegraphics[width=0.85\textwidth]{images/bst-search.png}\\[2pt]
-        \textit{Time:} \(O(\log n)\) avg, \(O(n)\) worst\\
-        \textit{Space:} \(O(\log n)\)
+        \textit{Time:} \(O(\log n)\) avg, \(O(h)\) worst\\
+        \textit{Space:} \(O(h)\)
     \end{minipage}
     \hfill
     \begin{minipage}[t]{0.19\textwidth}
@@ -80,17 +69,100 @@
     \hfill
     \begin{minipage}[t]{0.19\textwidth}
         \centering
-        \textbf{\scriptsize BST-Predecessor}\\[2pt]
+        \textbf{\scriptsize BST-Inorder}\\[2pt]
         \scriptsize
         \begin{minipage}[t]{\textwidth}
             \scriptsize
-            1. If left subtree exists:\\
-            \quad Return maximum in left subtree\\
-            2. Otherwise:\\
-            \quad Find first ancestor where\\
-            \quad node is in right subtree
+            1. Recursively traverse left\\
+            2. Visit current node\\
+            3. Recursively traverse right\\
+            \textit{(Visits nodes in sorted order)}
         \end{minipage}\\[4pt]
+        \includegraphics[width=0.8\textwidth]{images/bst-inorder.png}\\[2pt]
+        \textit{Time:} \(O(n)\)\\
+        \textit{Space:} \(O(h)\)
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.19\textwidth}
+        \centering
+        \textbf{\scriptsize BST-Preorder}\\[2pt]
+        \scriptsize
+        \begin{minipage}[t]{\textwidth}
+            \scriptsize
+            1. Visit current node\\
+            2. Recursively traverse left\\
+            3. Recursively traverse right\\
+            \textit{(Root first, then children)}
+        \end{minipage}\\[4pt]
+        \includegraphics[width=0.8\textwidth]{images/bst-preorder.png}\\
+        \textit{Time:} \(O(n)\)\\
+        \textit{Space:} \(O(h)\)\\[2pt]
+        \begin{minipage}[t]{1.6\textwidth}
+        \hrule
+        \end{minipage}
+        \vspace{2pt}
+        \textbf{Properties:}\\
+        \begin{minipage}[t]{1.6\textwidth}
+            \begin{itemize}
+            \item[-] Left subtree: all keys < node's key
+            \item[-] Right subtree: all keys > node's key
+            \item[-] Left and right subtrees are also BSTs
+            \item[-] A \textbf{Node} has: \textbf{key} (value), \textbf{left} \& \textbf{right} (child pointers), \textbf{parent} (optional)
+            \item[-] Tree height \textbf{h}: length of longest path from root to leaf
+            \end{itemize}
+        \end{minipage}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.19\textwidth}
+        \centering
+        \textbf{\scriptsize BST-Postorder}\\[2pt]
+        \scriptsize
+        \begin{minipage}[t]{\textwidth}
+            \scriptsize
+            1. Recursively traverse left\\
+            2. Recursively traverse right\\
+            3. Visit current node\\
+            \textit{(Children first, then root)}
+        \end{minipage}\\[4pt]
+        \includegraphics[width=0.8\textwidth]{images/bst-postorder.png}\\[2pt]
+        \textit{Time:} \(O(n)\)\\
+        \textit{Space:} \(O(h)\)
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.19\textwidth}
+        \centering
+        \textbf{\scriptsize BST-Transplant}\\[2pt]
+        \scriptsize
+        \begin{minipage}[t]{\textwidth}
+            \scriptsize
+            Replace subtree at u with v:\\
+            1. If u is root, set v as root\\
+            2. If u is left child, make v left child of u's parent\\
+            3. Else make v right child of u's parent\\
+            4. Set v's parent to u's parent
+        \end{minipage}\\[4pt]
+        \includegraphics[width=0.4\textwidth]{images/bst-transplant.png}\\[2pt]
+        \textit{Time:} \(O(1)\)\\
+        \textit{Space:} \(O(1)\)
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.19\textwidth}
+        \centering
+        \textbf{\scriptsize BST-Delete}\\[2pt]
+        \scriptsize
+        \begin{minipage}[t]{\textwidth}
+            \scriptsize
+            1. If z has no left: transplant right\\
+            2. If z has no right: transplant left\\
+            3. With both children:\\
+            \quad a. Find successor y\\
+            \quad b. Handle y's children\\
+            \quad c. Replace z with y
+        \end{minipage}\\[4pt]
+        \includegraphics[width=0.8\textwidth]{images/bst-delete.png}\\[2pt]
         \textit{Time:} \(O(h)\)\\
         \textit{Space:} \(O(1)\)
     \end{minipage}
+    
+    \vspace{2pt}
 \end{minipage}} 
