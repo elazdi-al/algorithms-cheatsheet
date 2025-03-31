@@ -23,7 +23,7 @@
 - Compute $F[i] = F[i-1] + F[i-2]$\\
 4. Return $F[n]$\\[2pt]
 \imageblock{0.45}{images/fib-bottom-up.png}\\
-\textbf{Complexity:} Time: $O(n)$, Space: $O(n)$
+\textbf{Complexity:} Time: $O(n)$, Space: $O(n)$ (includes input and memo array)
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.32\textwidth}
@@ -43,7 +43,7 @@ $r[j] = \max_{1\leq i\leq j}(p[i] + r[j-i])$\\
 - Compute $r[j] = \max_{1\leq i\leq j}(p[i] + r[j-i])$\\
 3. Return $r[n]$\\[2pt]
 \imageblock{0.5}{images/rod-bottom-up.png}\\
-\textbf{Complexity:} Time: $O(n^2)$, Space: $O(n)$
+\textbf{Complexity:} Time: $O(n^2)$, Space: $O(n)$ (includes input prices and array)
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.32\textwidth}
@@ -62,7 +62,7 @@ Find optimal parenthesization to minimize multiplications\\
 \imageblock{0.6}{images/matrix-bottom-up.png}\\
 \textbf{Complexity:}\\
 - Time: $O(n^3)$\\
-- Space: $O(n^2)$ for $m$ and $s$ tables\\
+- Space: $O(n^2)$ (includes matrix dimensions and tables)\\
 - Table $s[i,j]$ stores index of last matrix in first parenthesized group
 \end{minipage}
 \end{minipage}
