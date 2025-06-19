@@ -1,5 +1,5 @@
 \fbox{
-\algoblock{0.28}{\scriptsize Longest Common Subsequence}{
+\algoblock{0.45}{\scriptsize Longest Common Subsequence}{
 \scriptsize
 \begin{minipage}[t]{\textwidth}
 \textbf{Problem:} Find the longest subsequence common to two sequences
@@ -14,7 +14,7 @@
 \quad Otherwise, take maximum from above or left\\
 - Table $c[m,n]$ contains the LCS length\\
 - Table $b$ records decisions for reconstruction\\[2pt]
-\imageblock{1.2}{images/lcs-length.png}
+\imageblock{0.7}{images/lcs-length.png}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.48\textwidth}
@@ -24,10 +24,10 @@
 - Follow diagonal arrows and print characters\\
 - Skip cells with up or left arrows\\
 - Stops when reaching first row or column\\[2pt]
-\imageblock{0.9}{images/print-lcs.png}\\
+\imageblock{0.7}{images/print-lcs.png}\\
 \scriptsize
 \textbf{Example Recording of Solution:}\\
-\imageblock{1}{images/lcs-table.png}\\
+\imageblock{0.7}{images/lcs-table.png}\\
 
 \textbf{Complexity:}\\
 - Time: $O(mn)$ for two sequences of lengths $m$ and $n$\\

@@ -1,40 +1,45 @@
 \fbox{
 \algoblock{0.6}{\scriptsize Data Structure Operations Summary}{
 \tiny
-\begin{minipage}[t]{0.49\textwidth}
-% Queue Operations
-\textbf{\tiny Queue Operations}\\
+\begin{minipage}[t]{0.47\textwidth}
+\tiny
+\textbf{Priority Queue Operations}\\
 \begin{tabular}{|p{0.2\textwidth}|p{0.33\textwidth}|p{0.13\textwidth}|p{0.08\textwidth}|}
 \hline
 \textbf{Operation} & \textbf{Description} & \textbf{Time} & \textbf{Space} \\
 \hline
-Queue-Empty(Q) & Returns TRUE if queue is empty, FALSE otherwise & $O(1)$ & $O(1)$ \\
+Construction & Create priority queue from array of n elements & $O(n)$ & $O(n)$ \\
 \hline
-Enqueue(Q, x) & Adds element x to rear of queue Q & $O(1)$ & $O(1)$ \\
+Maximum(S) & Returns element with highest priority & $O(1)$ & $O(1)$ \\
 \hline
-Dequeue(Q) & Removes and returns front element from queue Q & $O(1)$ & $O(1)$ \\
+Extract-Max(S) & Removes and returns element with highest priority & $O(\log n)$ & $O(1)$ \\
+\hline
+Insert(S, x) & Inserts element x into set S & $O(\log n)$ & $O(1)$ \\
+\hline
+Increase-Key(S, x, k) & Increases priority of element x to k & $O(\log n)$ & $O(1)$ \\
 \hline
 \end{tabular}\\
-
-% Linked List Operations
-\textbf{Linked List Operations}\\
+\textbf{Stack Operations}\\
 \begin{tabular}{|p{0.2\textwidth}|p{0.33\textwidth}|p{0.13\textwidth}|p{0.08\textwidth}|}
 \hline
 \textbf{Operation} & \textbf{Description} & \textbf{Time} & \textbf{Space} \\
 \hline
-List-Search(L, k) & Returns pointer to first node with key k, NULL if not found & $O(n)$ & $O(1)$ \\
+Construction & Create stack from array of n elements & $O(n)$ & $O(n)$ \\
 \hline
-List-Insert(L, x) & Inserts node x at beginning of list L & $O(1)$ & $O(1)$ \\
+Stack-Empty(S) & Returns TRUE if stack is empty, FALSE otherwise & $O(1)$ & $O(1)$ \\
 \hline
-List-Delete(L, x) & Removes node x from list L & $O(n)$ find, $O(1)$ del & $O(1)$ \\
+Push(S, x) & Adds element x to top of stack S & $O(1)$ & $O(1)$ \\
+\hline
+Pop(S) & Removes and returns top element from stack S & $O(1)$ & $O(1)$ \\
 \hline
 \end{tabular}\\
-
-% Heap Operations
+\tiny
 \textbf{Heap Operations}\\
 \begin{tabular}{|p{0.2\textwidth}|p{0.3\textwidth}|p{0.16\textwidth}|p{0.08\textwidth}|}
 \hline
 \textbf{Operation} & \textbf{Description} & \textbf{Time} & \textbf{Space} \\
+\hline
+Construction & Create heap from array of n elements & $O(n)$ & $O(n)$ \\
 \hline
 Max-Heapify(A, i) & Maintains max-heap property at node i & $O(\log n)$ & $O(1)$ \\
 \hline
@@ -51,23 +56,14 @@ Heap-Increase-Key(A,i,k) & Increases key at index i to new value k & $O(\log n)$
 \end{tabular}\\
 \end{minipage}
 \hspace{-37px}
-\begin{minipage}[t]{0.49\textwidth}
-\textbf{Stack Operations}\\
-\begin{tabular}{|p{0.2\textwidth}|p{0.33\textwidth}|p{0.13\textwidth}|p{0.08\textwidth}|}
-\hline
-\textbf{Operation} & \textbf{Description} & \textbf{Time} & \textbf{Space} \\
-\hline
-Stack-Empty(S) & Returns TRUE if stack is empty, FALSE otherwise & $O(1)$ & $O(1)$ \\
-\hline
-Push(S, x) & Adds element x to top of stack S & $O(1)$ & $O(1)$ \\
-\hline
-Pop(S) & Removes and returns top element from stack S & $O(1)$ & $O(1)$ \\
-\hline
-\end{tabular}\\
+\begin{minipage}[t]{0.54\textwidth}
+\tiny
 \textbf{BST Operations}\\
 \begin{tabular}{|p{0.2\textwidth}|p{0.33\textwidth}|p{0.13\textwidth}|p{0.08\textwidth}|}
 \hline
 \textbf{Operation} & \textbf{Description} & \textbf{Time} & \textbf{Space} \\
+\hline
+Construction & Create BST from array of n elements & Best: $O(n\log n)$, Worst: $O(n^2)$ & $O(n)$ \\
 \hline
 BST-Search(T, k) & Finds node with key k in tree T & $O(h)$ & $O(h)$ \\
 \hline
@@ -88,20 +84,32 @@ BST-Preorder(T) & Visits root before its children & $O(n)$ & $O(h)$ \\
 BST-Postorder(T) & Visits children before root & $O(n)$ & $O(h)$ \\
 \hline
 \end{tabular}\\
-
-% Priority Queue Operations
-\textbf{Priority Queue Operations}\\
+\textbf{\tiny Queue Operations}\\
 \begin{tabular}{|p{0.2\textwidth}|p{0.33\textwidth}|p{0.13\textwidth}|p{0.08\textwidth}|}
 \hline
 \textbf{Operation} & \textbf{Description} & \textbf{Time} & \textbf{Space} \\
 \hline
-Maximum(S) & Returns element with highest priority & $O(1)$ & $O(1)$ \\
+Construction & Create queue from array of n elements & $O(n)$ & $O(n)$ \\
 \hline
-Extract-Max(S) & Removes and returns element with highest priority & $O(\log n)$ & $O(1)$ \\
+Queue-Empty(Q) & Returns TRUE if queue is empty, FALSE otherwise & $O(1)$ & $O(1)$ \\
 \hline
-Insert(S, x) & Inserts element x into set S & $O(\log n)$ & $O(1)$ \\
+Enqueue(Q, x) & Adds element x to rear of queue Q & $O(1)$ & $O(1)$ \\
 \hline
-Increase-Key(S, x, k) & Increases priority of element x to k & $O(\log n)$ & $O(1)$ \\
+Dequeue(Q) & Removes and returns front element from queue Q & $O(1)$ & $O(1)$ \\
+\hline
+\end{tabular}\\
+\textbf{Linked List Operations}\\
+\begin{tabular}{|p{0.2\textwidth}|p{0.33\textwidth}|p{0.13\textwidth}|p{0.08\textwidth}|}
+\hline
+\textbf{Operation} & \textbf{Description} & \textbf{Time} & \textbf{Space} \\
+\hline
+Construction & Create linked list from array of n elements & $O(n)$ & $O(n)$ \\
+\hline
+List-Search(L, k) & Returns pointer to first node with key k, NULL if not found & $O(n)$ & $O(1)$ \\
+\hline
+List-Insert(L, x) & Inserts node x at beginning of list L & $O(1)$ & $O(1)$ \\
+\hline
+List-Delete(L, x) & Removes node x from list L & $O(n)$ find, $O(1)$ del & $O(1)$ \\
 \hline
 \end{tabular}\\
 \end{minipage}

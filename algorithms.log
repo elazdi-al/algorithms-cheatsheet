@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.17)  31 MAR 2025 16:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.17)  19 JUN 2025 15:09
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**algorithms
-(./algorithms.tex
+**/Users/admin/Desktop/Algorithms-CheatSheet/algorithms.tex
+(/Users/admin/Desktop/Algorithms-CheatSheet/algorithms.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/extsizes/extarticle.cls
@@ -185,7 +186,7 @@ Package textpos Info: choosing support for LaTeX3 on input line 60.
 \TP@margin=\dimen164
 \TP@absmargin=\dimen165
 
-Grid set 16 x 16 = 38.39343pt x 49.68562pt
+Grid set 16 x 16 = 37.34424pt x 52.81541pt
 \TPboxrulesize=\dimen166
 \TP@ox=\dimen167
 \TP@oy=\dimen168
@@ -351,60 +352,155 @@ LaTeX Info: Redefining \lslig on input line 902.
 Package microtype Info: Loading configuration file microtype.cfg.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
-)) (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count299
-\l__pdf_internal_box=\box107
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty
+Package: anyfontsize 2007/11/22 anyfontsize.sty by pts
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/mathptmx.sty
+Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup6
+\symitalic=\mathgroup7
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count299
+\float@exts=\toks36
+\float@box=\box107
+\@float@everytoks=\toks37
+\@floatcapt=\box108
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
+\@float@every@algorithm=\toks38
+\c@algorithm=\count300
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
-LaTeX Warning: Unused global option(s):
-    [5pt].
-
-(./algorithms.aux)
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count301
+\c@ALG@rem=\count302
+\c@ALG@nested=\count303
+\ALG@tlm=\skip78
+\ALG@thistlm=\skip79
+\c@ALG@Lnr=\count304
+\c@ALG@blocknr=\count305
+\c@ALG@storecount=\count306
+\c@ALG@tmpcounter=\count307
+\ALG@tmplength=\skip80
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/paracol/paracol.sty
+Package: paracol 2018/12/31 v1.35 
+\pcol@currcol=\count308
+\pcol@nextcol=\count309
+\pcol@ncol=\count310
+\pcol@ncolleft=\count311
+\pcol@page=\count312
+\pcol@basepage=\count313
+\pcol@toppage=\count314
+\pcol@footnotebase=\count315
+\pcol@nfootnotes=\count316
+\pcol@mcid=\count317
+\pcol@prevdepth=\dimen199
+\pcol@colht=\dimen256
+\pcol@textfloatsep=\dimen257
+\pcol@lrmargin=\dimen258
+\pagerim=\dimen259
+\pcol@topskip=\skip81
+\belowfootnoteskip=\skip82
+\pcol@topfnotes=\box109
+\pcol@prespan=\box110
+\pcol@rightpage=\box111
+\pcol@colorstack@saved=\box112
+\pcol@tempboxa=\box113
+\pcol@tempboxb=\box114
+\pcol@colorins=\insert252
+\pcol@everyvbox=\toks39
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 137.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count318
+\l__pdf_internal_box=\box115
+) (./algorithms.aux)
 \openout1 = `algorithms.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 137.
+LaTeX Font Info:    ... okay on input line 137.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: <default>
+* paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(7.22743pt, 599.84013pt, 7.22743pt)
-* v-part:(T,H,B)=(0.0pt, 787.74255pt, 7.22743pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=599.84013pt
-* \textheight=787.74255pt
-* \oddsidemargin=-65.04256pt
-* \evensidemargin=-65.04256pt
-* \topmargin=-109.26999pt
-* \headheight=12.0pt
-* \headsep=25.0pt
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(0.0pt, 597.50787pt, 0.0pt)
+* v-part:(T,H,B)=(0.0pt, 845.04684pt, 0.0pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=597.50787pt
+* \textheight=845.04684pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=0.0pt
+* \headheight=0.0pt
+* \headsep=0.0pt
 * \topskip=10.0pt
-* \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
-* \columnsep=3.0pt
+* \footskip=0.0pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
+* \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
+* \hoffset=-72.26999pt
+* \voffset=-72.26999pt
 * \mag=1000
 * \@twocolumnfalse
 * \@twosidefalse
@@ -414,911 +510,488 @@ LaTeX Font Info:    ... okay on input line 83.
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count300
-\scratchdimen=\dimen199
-\scratchbox=\box108
-\nofMPsegments=\count301
-\nofMParguments=\count302
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count303
-\MPscratchDim=\dimen256
-\MPnumerator=\count304
-\makeMPintoPDFobject=\count305
-\everyMPtoPDFconversion=\toks37
+\scratchcounter=\count319
+\scratchdimen=\dimen260
+\scratchbox=\box116
+\nofMPsegments=\count320
+\nofMParguments=\count321
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count322
+\MPscratchDim=\dimen261
+\MPnumerator=\count323
+\makeMPintoPDFobject=\count324
+\everyMPtoPDFconversion=\toks41
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \microtypecontext on input line 83.
-Package microtype Info: Applying patch `item' on input line 83.
-Package microtype Info: Applying patch `toc' on input line 83.
-Package microtype Info: Applying patch `eqnum' on input line 83.
-Package microtype Info: Applying patch `footnote' on input line 83.
-Package microtype Info: Applying patch `verbatim' on input line 83.
+LaTeX Info: Redefining \microtypecontext on input line 137.
+Package microtype Info: Applying patch `item' on input line 137.
+Package microtype Info: Applying patch `toc' on input line 137.
+Package microtype Info: Applying patch `eqnum' on input line 137.
+Package microtype Info: Applying patch `footnote' on input line 137.
+Package microtype Info: Applying patch `verbatim' on input line 137.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 83.
-Package microtype Info: Tracking enabled.
-Package microtype Info: Using default tracking set `smallcaps'.
+LaTeX Info: Redefining \showhyphens on input line 137.
+Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 ) (./sections/titlepage.tex
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 12.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 13.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `ztmcm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 13.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 13.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 13.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 12.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) [1
-
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./sections/asymptotic_notation.tex
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <4> not available
-(Font)              size <5> substituted on input line 9.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 9.
-
-LaTeX Font Info:    Calculating math sizes for size <4> on input line 9.
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <2.79999> not available
-(Font)              size <5> substituted on input line 9.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <2> not available
-(Font)              size <5> substituted on input line 9.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4> not available
-(Font)              size <5> substituted on input line 9.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <2.79999> not available
-(Font)              size <5> substituted on input line 9.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <2> not available
-(Font)              size <5> substituted on input line 9.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 9.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <2.79999> not available
-(Font)              size <5> substituted on input line 9.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <2> not available
-(Font)              size <5> substituted on input line 9.
-
-) (./sections/master_theorem.tex
-Underfull \hbox (badness 10000) in paragraph at lines 45--45
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--45
-
- []
-
-) (./sections/insertion_sort.tex
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/it' in size <4> not available
-(Font)              size <5> substituted on input line 27.
-
-<images/insertion-sort.png, id=11, 970.62625pt x 456.70625pt>
-File: images/insertion-sort.png Graphic file (type png)
-<use images/insertion-sort.png>
-Package pdftex.def Info: images/insertion-sort.png  used on input line 27.
-(pdftex.def)             Requested size: 97.17416pt x 45.72208pt.
-
-Overfull \hbox (16.19548pt too wide) in paragraph at lines 27--27
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--27
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--27
-
- []
-
-) (./sections/max_subarray.tex
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
-
- []
-
-<images/max-subarray.png, id=13, 565.11125pt x 335.2525pt>
-File: images/max-subarray.png Graphic file (type png)
-<use images/max-subarray.png>
-Package pdftex.def Info: images/max-subarray.png  used on input line 40.
-(pdftex.def)             Requested size: 131.58778pt x 78.06305pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
-
- []
-
-<images/max-subarray-crossing.png, id=14, 552.0625pt x 522.95375pt>
-File: images/max-subarray-crossing.png Graphic file (type png)
-<use images/max-subarray-crossing.png>
-Package pdftex.def Info: images/max-subarray-crossing.png  used on input line 40.
-(pdftex.def)             Requested size: 93.57251pt x 88.63763pt.
-
-Overfull \hbox (15.59521pt too wide) in paragraph at lines 40--40
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
-
- []
-
-) (./sections/stack_operations.tex
-Underfull \hbox (badness 10000) in paragraph at lines 22--22
-
- []
-
-) (./sections/strassen_matrix.tex
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
-
- []
-
-
-Overfull \hbox (11.19626pt too wide) detected at line 57
-[][]
- []
-
-) (./sections/queue_operations.tex) (./sections/merge_sort.tex
-<images/merge-sort.png, id=15, 722.19812pt x 199.74625pt>
-File: images/merge-sort.png Graphic file (type png)
-<use images/merge-sort.png>
-Package pdftex.def Info: images/merge-sort.png  used on input line 28.
-(pdftex.def)             Requested size: 140.65019pt x 38.90007pt.
-<images/merge.png, id=16, 525.965pt x 545.03625pt>
-File: images/merge.png Graphic file (type png)
-<use images/merge.png>
-Package pdftex.def Info: images/merge.png  used on input line 28.
-(pdftex.def)             Requested size: 115.47186pt x 119.65884pt.
-) (./sections/priority_queue.tex
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--25
-
- []
-
-) (./sections/heap.tex
-Overfull \hbox (21.27017pt too wide) in paragraph at lines 76--76
-[][]
- []
-
-<images/heapify.png, id=17, 505.89pt x 463.7325pt>
-File: images/heapify.png Graphic file (type png)
-<use images/heapify.png>
-Package pdftex.def Info: images/heapify.png  used on input line 76.
-(pdftex.def)             Requested size: 73.48137pt x 67.35623pt.
-<images/heap-insert.png, id=18, 308.15125pt x 108.405pt>
-File: images/heap-insert.png Graphic file (type png)
-<use images/heap-insert.png>
-Package pdftex.def Info: images/heap-insert.png  used on input line 76.
-(pdftex.def)             Requested size: 73.48137pt x 25.849pt.
-<images/heap-increase-key.png, id=19, 394.47375pt x 171.64125pt>
-File: images/heap-increase-key.png Graphic file (type png)
-<use images/heap-increase-key.png>
-Package pdftex.def Info: images/heap-increase-key.png  used on input line 76.
-(pdftex.def)             Requested size: 73.48137pt x 31.97311pt.
-<images/build-max-heap.png, id=20, 298.11375pt x 106.3975pt>
-File: images/build-max-heap.png Graphic file (type png)
-<use images/build-max-heap.png>
-Package pdftex.def Info: images/build-max-heap.png  used on input line 76.
-(pdftex.def)             Requested size: 73.48137pt x 26.22589pt.
-<images/heapsort.png, id=21, 326.21875pt x 141.52875pt>
-File: images/heapsort.png Graphic file (type png)
-<use images/heapsort.png>
-Package pdftex.def Info: images/heapsort.png  used on input line 76.
-(pdftex.def)             Requested size: 73.48137pt x 31.8793pt.
-
-Overfull \hbox (1.66669pt too wide) in paragraph at lines 76--76
-[]  []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
-
- []
-
-) (./sections/operations_summary.tex
-Overfull \hbox (4.44269pt too wide) in paragraph at lines 108--108
-[]|\OT1/cmr/bx/n/5 (-20) Space| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Queue-
- []
-
-
-Underfull \hbox (badness 2080) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Returns TRUE if
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-\OT1/cmr/m/n/5 (+20) queue is empty,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Enqueue(Q,
- []
-
-
-Underfull \hbox (badness 6910) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Removes and re-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-
- []
-
-
-Overfull \hbox (4.44269pt too wide) in paragraph at lines 108--108
-[]|\OT1/cmr/bx/n/5 (-20) Space| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) List-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-\OT1/cmr/m/n/5 (+20) Search(L,
- []
-
-
-Underfull \hbox (badness 5374) in paragraph at lines 108--108
-\OT1/cmr/m/n/5 (+20) k, NULL if not
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) List-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-\OT1/cmr/m/n/5 (+20) Insert(L,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) List-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-\OT1/cmr/m/n/5 (+20) Delete(L,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Removes node x
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|$\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (+20) (\OML/cmm/m/it/5 n\OT1/cmr/m/n/5 (+20) )$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-\OT1/cmr/m/n/5 (+20) find,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (+20) (1)$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-
- []
-
-
-Overfull \hbox (4.44269pt too wide) in paragraph at lines 108--108
-[]|\OT1/cmr/bx/n/5 (-20) Space| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Max-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-\OT1/cmr/m/n/5 (+20) Heapify(A,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Maintains max-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Build-Max-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Heap-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-\OT1/cmr/m/n/5 (+20) Sort(A,
- []
-
-
-Overfull \hbox (2.66992pt too wide) in paragraph at lines 108--108
-[]|$\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (-20) (\OML/cmm/m/it/5 n [] n\OT1/cmr/m/n/5 (-20) )$| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Max-Heap-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-\OT1/cmr/m/n/5 (+20) Insert(A,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Heap-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-\OT1/cmr/m/n/5 (+20) Extract-
- []
-
-
-Underfull \hbox (badness 2285) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Returns and re-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Heap-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-\OT1/cmr/m/n/5 (+20) Increase-
- []
-
-
-Underfull \hbox (badness 2781) in paragraph at lines 108--108
-\OT1/cmr/m/n/5 (+20) in-dex i to new
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-
- []
-
-
-Overfull \hbox (4.44269pt too wide) in paragraph at lines 108--108
-[]|\OT1/cmr/bx/n/5 (-20) Space| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Stack-
- []
-
-
-Underfull \hbox (badness 2080) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Returns TRUE if
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-\OT1/cmr/m/n/5 (+20) stack is empty,
- []
-
-
-Underfull \hbox (badness 6910) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Removes and re-
- []
-
-
-Overfull \hbox (4.44269pt too wide) in paragraph at lines 108--108
-[]|\OT1/cmr/bx/n/5 (-20) Space| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) BST-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-\OT1/cmr/m/n/5 (+20) Search(T,
- []
-
-
-Overfull \hbox (0.74849pt too wide) in paragraph at lines 108--108
-[]|$\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (-20) (\OML/cmm/m/it/5 h\OT1/cmr/m/n/5 (-20) )$| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) BST-
- []
-
-
-Overfull \hbox (2.60947pt too wide) in paragraph at lines 108--108
-\OT1/cmr/m/n/5 (-20) Minimum(T)| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) BST-
- []
-
-
-Overfull \hbox (3.80045pt too wide) in paragraph at lines 108--108
-\OT1/cmr/m/n/5 (-20) Maximum(T)| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) BST-
- []
-
-
-Overfull \hbox (1.24147pt too wide) in paragraph at lines 108--108
-\OT1/cmr/m/n/5 (-20) Successor(x)| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) BST-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-\OT1/cmr/m/n/5 (+20) Insert(T,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) BST-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-\OT1/cmr/m/n/5 (+20) Delete(T,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Removes node z
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) BST-
- []
-
-
-Overfull \hbox (0.74849pt too wide) in paragraph at lines 108--108
-[]|$\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (-20) (\OML/cmm/m/it/5 h\OT1/cmr/m/n/5 (-20) )$| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) BST-
- []
-
-
-Underfull \hbox (badness 1394) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Visits root be-fore
- []
-
-
-Overfull \hbox (0.74849pt too wide) in paragraph at lines 108--108
-[]|$\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (-20) (\OML/cmm/m/it/5 h\OT1/cmr/m/n/5 (-20) )$| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) BST-
- []
-
-
-Overfull \hbox (3.13344pt too wide) in paragraph at lines 108--108
-\OT1/cmr/m/n/5 (-20) Postorder(T)| 
- []
-
-
-Overfull \hbox (0.74849pt too wide) in paragraph at lines 108--108
-[]|$\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (-20) (\OML/cmm/m/it/5 h\OT1/cmr/m/n/5 (-20) )$| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-
- []
-
-
-Overfull \hbox (4.44269pt too wide) in paragraph at lines 108--108
-[]|\OT1/cmr/bx/n/5 (-20) Space| 
- []
-
-
-Overfull \hbox (2.77962pt too wide) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (-20) Maximum(S)| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Returns el-e-ment
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Extract-
- []
-
-
-Underfull \hbox (badness 6910) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Removes and re-
- []
-
-
-Overfull \hbox (2.32956pt too wide) in paragraph at lines 108--108
-[]|$\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (-20) ([] \OML/cmm/m/it/5 n\OT1/cmr/m/n/5 (-20) )$| 
- []
-
-
-Underfull \hbox (badness 2189) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Inserts el-e-ment x
- []
-
-
-Overfull \hbox (2.32956pt too wide) in paragraph at lines 108--108
-[]|$\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (-20) ([] \OML/cmm/m/it/5 n\OT1/cmr/m/n/5 (-20) )$| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[]|\OT1/cmr/m/n/5 (+20) Increase-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-\OT1/cmr/m/n/5 (+20) Key(S, x,
- []
-
-
-Overfull \hbox (2.32956pt too wide) in paragraph at lines 108--108
-[]|$\OML/cmm/m/it/5 O\OT1/cmr/m/n/5 (-20) ([] \OML/cmm/m/it/5 n\OT1/cmr/m/n/5 (-20) )$| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-
- []
-
-) (./sections/binary_search_tree.tex
-<images/bst-search.png, id=22, 556.0775pt x 249.93375pt>
-File: images/bst-search.png Graphic file (type png)
-<use images/bst-search.png>
-Package pdftex.def Info: images/bst-search.png  used on input line 186.
-(pdftex.def)             Requested size: 96.87611pt x 43.54074pt.
-<images/bst-minimum.png, id=23, 228.855pt x 131.49126pt>
-File: images/bst-minimum.png Graphic file (type png)
-<use images/bst-minimum.png>
-Package pdftex.def Info: images/bst-minimum.png  used on input line 186.
-(pdftex.def)             Requested size: 56.98553pt x 32.7403pt.
-<images/bst-maximum.png, id=24, 228.855pt x 131.49126pt>
-File: images/bst-maximum.png Graphic file (type png)
-<use images/bst-maximum.png>
-Package pdftex.def Info: images/bst-maximum.png  used on input line 186.
-(pdftex.def)             Requested size: 56.98553pt x 32.7403pt.
-<images/bst-successor.png, id=25, 339.2675pt x 203.76125pt>
-File: images/bst-successor.png Graphic file (type png)
-<use images/bst-successor.png>
-Package pdftex.def Info: images/bst-successor.png  used on input line 186.
-(pdftex.def)             Requested size: 91.1772pt x 54.75821pt.
-<images/bst-postorder.png, id=26, 332.24126pt x 124.465pt>
-File: images/bst-postorder.png Graphic file (type png)
-<use images/bst-postorder.png>
-Package pdftex.def Info: images/bst-postorder.png  used on input line 186.
-(pdftex.def)             Requested size: 91.1772pt x 34.15675pt.
-<images/bst-inorder.png, id=27, 344.28625pt x 138.5175pt>
-File: images/bst-inorder.png Graphic file (type png)
-<use images/bst-inorder.png>
-Package pdftex.def Info: images/bst-inorder.png  used on input line 186.
-(pdftex.def)             Requested size: 91.1772pt x 36.6837pt.
-<images/bst-preorder.png, id=28, 326.21875pt x 124.465pt>
-File: images/bst-preorder.png Graphic file (type png)
-<use images/bst-preorder.png>
-Package pdftex.def Info: images/bst-preorder.png  used on input line 186.
-(pdftex.def)             Requested size: 91.1772pt x 34.78728pt.
-
-
-LaTeX Font Warning: Font shape `TS1/cmr/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 186.
-
-
-Overfull \hbox (68.38333pt too wide) in paragraph at lines 186--186
- [][] 
- []
-
-<images/bst-insert.png, id=29, 442.65375pt x 420.57124pt>
-File: images/bst-insert.png Graphic file (type png)
-<use images/bst-insert.png>
-Package pdftex.def Info: images/bst-insert.png  used on input line 186.
-(pdftex.def)             Requested size: 91.1772pt x 86.62837pt.
-<images/bst-transplant.png, id=30, 222.8325pt x 242.9075pt>
-File: images/bst-transplant.png Graphic file (type png)
-<use images/bst-transplant.png>
-Package pdftex.def Info: images/bst-transplant.png  used on input line 186.
-(pdftex.def)             Requested size: 45.58774pt x 49.69257pt.
-<images/bst-delete.png, id=31, 816.04875pt x 578.16pt>
-File: images/bst-delete.png Graphic file (type png)
-<use images/bst-delete.png>
-Package pdftex.def Info: images/bst-delete.png  used on input line 186.
-(pdftex.def)             Requested size: 113.97108pt x 80.74776pt.
-) (./sections/dynamic_programming.tex
-<images/fib-memoized.png, id=32, 1180.41pt x 375.4025pt>
-File: images/fib-memoized.png Graphic file (type png)
-<use images/fib-memoized.png>
-Package pdftex.def Info: images/fib-memoized.png  used on input line 69.
-(pdftex.def)             Requested size: 191.95323pt x 61.04514pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--69
-
- []
-
-<images/fib-bottom-up.png, id=33, 595.22375pt x 343.2825pt>
-File: images/fib-bottom-up.png Graphic file (type png)
-<use images/fib-bottom-up.png>
-Package pdftex.def Info: images/fib-bottom-up.png  used on input line 69.
-(pdftex.def)             Requested size: 86.37836pt x 49.81396pt.
-<images/rod-memoized.png, id=34, 1077.02374pt x 359.3425pt>
-File: images/rod-memoized.png Graphic file (type png)
-<use images/rod-memoized.png>
-Package pdftex.def Info: images/rod-memoized.png  used on input line 69.
-(pdftex.def)             Requested size: 191.95323pt x 64.04282pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--69
-
- []
-
-<images/rod-bottom-up.png, id=35, 448.67625pt x 334.24875pt>
-File: images/rod-bottom-up.png Graphic file (type png)
-<use images/rod-bottom-up.png>
-Package pdftex.def Info: images/rod-bottom-up.png  used on input line 69.
-(pdftex.def)             Requested size: 95.97661pt x 71.49486pt.
-<images/matrix-bottom-up.png, id=36, 831.105pt x 602.25pt>
-File: images/matrix-bottom-up.png Graphic file (type png)
-<use images/matrix-bottom-up.png>
-Package pdftex.def Info: images/matrix-bottom-up.png  used on input line 69.
-(pdftex.def)             Requested size: 153.56316pt x 111.27666pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--69
-
- []
-
-) (./sections/longest_common_subsequence.tex
-<images/lcs-length.png, id=37, 427.5975pt x 403.5075pt>
-File: images/lcs-length.png Graphic file (type png)
-<use images/lcs-length.png>
-Package pdftex.def Info: images/lcs-length.png  used on input line 39.
-(pdftex.def)             Requested size: 96.74066pt x 91.29015pt.
-
-Underfull \hbox (badness 3108) in paragraph at lines 39--39
-\OML/cmm/m/it/5 c\OT1/cmr/m/n/5 (+20) [0\OML/cmm/m/it/5 :::m; \OT1/cmr/m/n/5 (+20) 0\OML/cmm/m/it/5 :::n\OT1/cmr/m/n/5 (+20) ]$ and di-rec-
- []
-
-
-Underfull \hbox (badness 1655) in paragraph at lines 39--39
-\OT1/cmr/m/n/5 (+20) - Ta-ble $\OML/cmm/m/it/5 c\OT1/cmr/m/n/5 (+20) [\OML/cmm/m/it/5 m; n\OT1/cmr/m/n/5 (+20) ]$ con-tains
- []
-
-
-Overfull \hbox (16.12323pt too wide) in paragraph at lines 39--39
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
-
- []
-
-<images/print-lcs.png, id=38, 350.30875pt x 252.945pt>
-File: images/print-lcs.png Graphic file (type png)
-<use images/print-lcs.png>
-Package pdftex.def Info: images/print-lcs.png  used on input line 39.
-(pdftex.def)             Requested size: 72.55519pt x 52.38669pt.
-<images/lcs-table.png, id=39, 695.59875pt x 407.5225pt>
-File: images/lcs-table.png Graphic file (type png)
-<use images/lcs-table.png>
-Package pdftex.def Info: images/lcs-table.png  used on input line 39.
-(pdftex.def)             Requested size: 80.61743pt x 47.22786pt.
-
-Underfull \hbox (badness 1596) in paragraph at lines 39--39
-\OT1/cmr/m/n/5 (+20) - Re-cur-sively trace back
- []
-
-
-Underfull \hbox (badness 1286) in paragraph at lines 39--39
-\OT1/cmr/bx/n/5 (+20) Example Record-ing of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--39
-
- []
-
-) (./sections/optimal_binary_search_tree.tex
-Underfull \hbox (badness 2158) in paragraph at lines 29--29
-[]\OT1/cmr/bx/n/5 (+20) Problem: \OT1/cmr/m/n/5 (+20) Con-struct a BST with min-i-mum
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
-[]\OT1/cmr/m/n/5 (+20) Input: Keys $\OML/cmm/m/it/5 K[]; [] ; K[]$\OT1/cmr/m/n/5 (+20) , prob-a-bil-i-ties
- []
-
-<images/optimal-bst.png, id=40, 619.31375pt x 361.35pt>
-File: images/optimal-bst.png Graphic file (type png)
-<use images/optimal-bst.png>
-Package pdftex.def Info: images/optimal-bst.png  used on input line 29.
-(pdftex.def)             Requested size: 134.9631pt x 78.74738pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
-
- []
-
-) (./sections/linked_list.tex
-<images/list-search.png, id=41, 379.4175pt x 212.795pt>
-File: images/list-search.png Graphic file (type png)
-<use images/list-search.png>
-Package pdftex.def Info: images/list-search.png  used on input line 55.
-(pdftex.def)             Requested size: 66.4031pt x 37.23967pt.
-<images/list-insert.png, id=42, 278.03876pt x 252.945pt>
-File: images/list-insert.png Graphic file (type png)
-<use images/list-insert.png>
-Package pdftex.def Info: images/list-insert.png  used on input line 55.
-(pdftex.def)             Requested size: 66.4031pt x 60.41084pt.
-<images/list-delete.png, id=43, 333.245pt x 252.945pt>
-File: images/list-delete.png Graphic file (type png)
-<use images/list-delete.png>
-Package pdftex.def Info: images/list-delete.png  used on input line 55.
-(pdftex.def)             Requested size: 66.4031pt x 50.39897pt.
 )
-Overfull \hbox (52.98839pt too wide) in paragraph at lines 9--112
-[][]    []
- []
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+ [1
 
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}])
+LaTeX Font Info:    Calculating math sizes for size <5.2> on input line 164.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.2> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 164.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <3.84802> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 164.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <3.12003> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 164.
 
-Overfull \hbox (86.36562pt too wide) in paragraph at lines 9--112
-[]  [] 
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 9--112
-[]
- []
-
-
-Overfull \hbox (11.52228pt too wide) in paragraph at lines 9--112
-[]
- []
-
-
-Overfull \hbox (0.52238pt too wide) in paragraph at lines 9--112
-[]  []  []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--112
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
 
  []
 
-[1 <./images/insertion-sort.png> <./images/max-subarray.png> <./images/max-subarray-crossing.png> <./images/merge-sort.png> <./images/merge.png> <./images/heapify.png> <./images/heap-insert.png> <./images/heap-increase-key.png> <./images/build-max-heap.png> <./images/heapsort.png>] [2{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./images/bst-search.png> <./images/bst-minimum.png> <./images/bst-maximum.png> <./images/bst-successor.png> <./images/bst-postorder.png> <./images/bst-inorder.png> <./images/bst-preorder.png> <./images/bst-insert.png> <./images/bst-transplant.png> <./images/bst-delete.png> <./images/fib-memoized.png> <./images/fib-bottom-up.png> <./images/rod-memoized.png> <./images/rod-bottom-up.png> <./images/matrix-bottom-up.png> <./images/lcs-length.png> <./images/print-lcs.png> <./images/lcs-table.png> <./images/optimal-bst.png> <./images/list-search.png> <./images/list-insert.png> <./images/list-delete.png>] (./algorithms.aux)
+
+Overfull \hbox (8.29999pt too wide) in paragraph at lines 164--190
+[][] 
+ []
+
+
+Overfull \hbox (7.79999pt too wide) in paragraph at lines 164--190
+[] 
+ []
+
+(./code/merge-sort.tex
+LaTeX Font Info:    Calculating math sizes for size <4.3> on input line 3.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <4.3> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <3.18202> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <2.58002> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+) (./code/merge.tex)
+Overfull \hbox (8.29999pt too wide) in paragraph at lines 216--217
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+
+ []
+
+(./code/fib-memoized.tex
+Underfull \hbox (badness 1199) in paragraph at lines 19--20
+[] $\OML/ztmcm/m/it/4.3 ans \OMS/ztmcm/m/n/4.3   []\OT1/ztmcm/m/n/4.3 (\OML/ztmcm/m/it/4.3 n \OMS/ztmcm/m/n/4.3 ^^@ \OT1/ztmcm/m/n/4.3 1\OML/ztmcm/m/it/4.3 ; r\OT1/ztmcm/m/n/4.3 ) +
+ []
+
+) (./code/fib-bottom-up.tex) (./code/rod-memoized.tex
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+[] \OT1/ptm/m/n/4.3 (+20) q = $[][]\OML/ztmcm/m/it/4.3 q;  p\OT1/ztmcm/m/n/4.3 [\OML/ztmcm/m/it/4.3 i\OT1/ztmcm/m/n/4.3 ] +
+ []
+
+) (./code/rod-bottom-up.tex)
+Overfull \hbox (8.29999pt too wide) in paragraph at lines 244--310
+[][] 
+ []
+
+
+Overfull \hbox (7.79999pt too wide) in paragraph at lines 244--310
+[] 
+ []
+
+
+Overfull \hbox (7.79999pt too wide) in paragraph at lines 244--310
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--328
+
+ []
+
+(./code/insertion-sort.tex) (./code/bst-search.tex) (./code/bst-minimum.tex) (./code/bst-maximum.tex) (./code/bst-successor.tex) (./code/bst-insert.tex) (./code/bst-postorder.tex) (./code/bst-inorder.tex) (./code/bst-preorder.tex) (./code/bst-transplant.tex) (./code/bst-delete.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 526--526
+
+ []
+
+
+Overfull \hbox (5.79999pt too wide) in paragraph at lines 328--527
+[][] 
+ []
+
+
+Overfull \hbox (6.0347pt too wide) in paragraph at lines 328--527
+[] 
+ []
+
+
+Overfull \hbox (7.79999pt too wide) in paragraph at lines 328--527
+[] 
+ []
+
+
+Overfull \hbox (2.79999pt too wide) in paragraph at lines 328--527
+[] 
+ []
+
+(./code/heapify.tex) (./code/heap-insert.tex) (./code/heap-increase-key.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 623--623
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 623--623
+
+ []
+
+(./code/build-max-heap.tex) (./code/heapsort.tex) (./code/heap-extract-max.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 659--659
+
+ []
+
+(./code/max-subarray.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 659--659
+
+ []
+
+(./code/max-subarray-crossing.tex)
+Overfull \hbox (0.98799pt too wide) in paragraph at lines 659--659
+[] [] 
+ []
+
+
+Overfull \hbox (3.27023pt too wide) in paragraph at lines 772--772
+[]|\OT1/ptm/b/n/5.2 (-20) Space| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (\OML/ztmcm/m/it/5.2 n\OT1/ztmcm/m/n/5.2 )$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Overfull \hbox (3.27023pt too wide) in paragraph at lines 772--772
+[]|\OT1/ptm/b/n/5.2 (-20) Space| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (\OML/ztmcm/m/it/5.2 n\OT1/ztmcm/m/n/5.2 )$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Overfull \hbox (3.27023pt too wide) in paragraph at lines 772--772
+[]|\OT1/ptm/b/n/5.2 (-20) Space| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (\OML/ztmcm/m/it/5.2 n\OT1/ztmcm/m/n/5.2 )$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 772--772
+[]|\OT1/ptm/m/n/5.2 (+20) Build-Max-
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 772--772
+[]|\OT1/ptm/m/n/5.2 (+20) Max-Heap-Insert(A,
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 772--772
+[]|\OT1/ptm/m/n/5.2 (+20) Heap-Extract-
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 772--772
+[]|\OT1/ptm/m/n/5.2 (+20) Heap-Increase-
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 772--772
+
+ []
+
+
+Overfull \hbox (3.27023pt too wide) in paragraph at lines 772--772
+[]|\OT1/ptm/b/n/5.2 (-20) Space| 
+ []
+
+
+Underfull \hbox (badness 5119) in paragraph at lines 772--772
+[]|\OT1/ptm/m/n/5.2 (+20) Best: $\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (\OML/ztmcm/m/it/5.2 n [] n\OT1/ztmcm/m/n/5.2 )$\OT1/ptm/m/n/5.2 (+20) ,
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (\OML/ztmcm/m/it/5.2 n\OT1/ztmcm/m/n/5.2 )$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (\OML/ztmcm/m/it/5.2 h\OT1/ztmcm/m/n/5.2 )$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (\OML/ztmcm/m/it/5.2 h\OT1/ztmcm/m/n/5.2 )$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (\OML/ztmcm/m/it/5.2 h\OT1/ztmcm/m/n/5.2 )$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (\OML/ztmcm/m/it/5.2 h\OT1/ztmcm/m/n/5.2 )$| 
+ []
+
+
+Overfull \hbox (3.27023pt too wide) in paragraph at lines 772--772
+[]|\OT1/ptm/b/n/5.2 (-20) Space| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (\OML/ztmcm/m/it/5.2 n\OT1/ztmcm/m/n/5.2 )$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Overfull \hbox (3.27023pt too wide) in paragraph at lines 772--772
+[]|\OT1/ptm/b/n/5.2 (-20) Space| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (\OML/ztmcm/m/it/5.2 n\OT1/ztmcm/m/n/5.2 )$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Overfull \hbox (0.91982pt too wide) in paragraph at lines 772--772
+[]|$\OML/ztmcm/m/it/5.2 O\OT1/ztmcm/m/n/5.2 (1)$| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 772--772
+
+ []
+
+
+Overfull \hbox (8.29999pt too wide) in paragraph at lines 543--773
+[][] 
+ []
+
+
+Overfull \hbox (7.79999pt too wide) in paragraph at lines 543--773
+[] 
+ []
+
+
+Overfull \hbox (28.92455pt too wide) in paragraph at lines 543--773
+[] 
+ []
+
+
+Overfull \hbox (7.79999pt too wide) in paragraph at lines 543--773
+[] 
+ []
+
+[1] (./code/matrix-bottom-up.tex) [2] (./algorithms.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 3.0pt have occurred.
-
  ) 
 Here is how much of TeX's memory you used:
- 8049 strings out of 474116
- 131832 string characters out of 5743682
- 2045187 words of memory out of 5000000
- 30163 multiletter control sequences out of 15000+600000
- 569240 words of font info for 124 fonts, out of 8000000 for 9000
+ 9704 strings out of 474116
+ 155053 string characters out of 5743682
+ 2134187 words of memory out of 5000000
+ 31568 multiletter control sequences out of 15000+600000
+ 635370 words of font info for 318 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,15n,65p,1003b,558s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb>
-Output written on algorithms.pdf (3 pages, 2903393 bytes).
+ 57i,15n,65p,1050b,821s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on algorithms.pdf (3 pages, 129613 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 65 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 33441 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 103425 words of extra memory for PDF output out of 106986 (max. 10000000)
 

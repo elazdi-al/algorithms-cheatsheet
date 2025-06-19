@@ -1,5 +1,16 @@
-\documentclass[5pt]{extarticle}
-\usepackage[top=0in, bottom=0.1in, left=0.1in, right=0.1in]{geometry} % Minimal margins
+\documentclass[a4paper]{extarticle}
+\usepackage[a4paper, top=0in, bottom=0in, left=0in, right=0in, includeheadfoot, includehead, includefoot]{geometry} % Minimal margins
+% Force absolute minimal margins
+\setlength{\hoffset}{-1in}
+\setlength{\voffset}{-1in}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\marginparwidth}{0pt}
+\setlength{\marginparsep}{0pt}
+\setlength{\footskip}{0pt}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{enumitem}
 \usepackage{graphicx}
@@ -13,100 +24,770 @@
 \usepackage{titlesec}
 \usepackage{xcolor}
 \usepackage{microtype}
+\usepackage{anyfontsize} % Allow any font size
+\usepackage{mathptmx} % Georgia-like font (Times with math support)$\usepackage{algorithm}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\renewcommand{\familydefault}{\rmdefault} % Set Georgia as default font
+\usepackage{paracol}
+% Define custom font size command that works everywhere
+\newcommand{\tinyfont}{\fontsize{5.2pt}{1pt}\selectfont}
 
-% Configure microtype for more condensed text
-\microtypesetup{tracking=true, letterspace=-40}
-\DisableLigatures{encoding = *, family = * }
+% Define special ultra-small font for algorithms
+\newcommand{\algofont}{\fontsize{4.3pt}{4.7pt}\selectfont}
+\linespread{1.05}
+% Set global font size
+\tinyfont
 
-% Compress inter-word spacing
-\fontdimen2\font=2pt  % inter-word space
-\fontdimen3\font=-1pt  % inter-word stretch
-\fontdimen4\font=1pt  % inter-word shrink
-\fontdimen7\font=1pt  % extra space
+% Make math fonts match text size
+\DeclareMathSizes{0.8pt}{0.8pt}{0.6pt}{0.5pt}
 
-% Define a custom smaller font size
+% Make algorithm math fonts even smaller
+\DeclareMathSizes{4pt}{4pt}{3pt}{2pt}
+
+% Ensure minipages inherit the font size
+\let\oldminipage\minipage
+\renewcommand{\minipage}[2][]{\oldminipage[#1]{#2}\tinyfont}
+
+% ──────────────────────────────────────────────────────────────
+%  Algorithms (algorithm + algpseudocode)
+% ──────────────────────────────────────────────────────────────
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+%----------------------- 1.  Appearance ------------------------
+\AtBeginEnvironment{algorithm}{\tiny}        % smaller body text
+\algrenewcommand\algorithmicindent{2pt}     % compact indent
+
+% Right-flushed, grey comments with a ▹ bullet
+\algrenewcommand\algorithmiccomment[1]{\textit{// #1}}
+
+%----------------------- 2.  Keywords --------------------------
+% lower-case keywords, remove redundant "then/end" words
+\algrenewcommand\algorithmicif{\textbf{if}}
+\algrenewcommand\algorithmicelse{\textbf{else}}
+\algrenewcommand\algorithmicfor{\textbf{for}}
+\algrenewcommand\algorithmicwhile{\textbf{while}}
+\algrenewcommand\algorithmicreturn{\textbf{return}}
+\algrenewcommand\algorithmicthen{}
+\algrenewcommand\algorithmicend{}
+
+% no "Function/Procedure" headings and a lower-case "call"
+\algrenewcommand\algorithmicfunction{}
+\algrenewcommand\algorithmicprocedure{}
+
+%----------------------- 3.  < and > as math -------------------
+% Make plain < and > automatically behave like math relations
 \makeatletter
-\newcommand{\tinyfont}{\@setfontsize\tinyfont{4pt}{2pt}}
+\newcommand{\algLt}{\ensuremath{<}}\newcommand{\algGt}{\ensuremath{>}}
+\AtBeginEnvironment{algorithmic}{%
+  \begingroup
+    \lccode`\~=`\<
+    \lowercase{\endgroup\def~{\algLt}}%
+  \begingroup
+    \lccode`\~=`\>
+    \lowercase{\endgroup\def~{\algGt}}%
+  \catcode`\<=\active \catcode`\>=\active
+}
 \makeatother
 
-% Replace \scriptsize with \tinyfont in document where needed
-\let\oldscriptsize\scriptsize
-\renewcommand{\scriptsize}{\tinyfont}
+%----------------------- 4.  Remove algorithm rules -----------
+% Remove the horizontal rules at top and bottom of algorithms
+\usepackage{float}
+\floatstyle{plain}
+\restylefloat{algorithm}
 
-% Fix horizontal spacing
-\setstretch{0.85}
+%----------------------- 5.  Ultra-small loader ---------------
+% Usage: \algocode{mysort}  ⇒ loads code/mysort.tex with special small font
+\newcommand{\algocode}[1]{%
+  \vspace{0pt}%
+  \begin{algorithm}[H]
+    \setlength{\abovecaptionskip}{0pt}%
+    \setlength{\belowcaptionskip}{0pt}
+    \setlength{\intextsep}{0pt}%
+    \setlength{\textfloatsep}{0pt}
+    \algofont  % Use special ultra-small algorithm font
+    \input{code/#1.tex}%
+  \end{algorithm}%
+  \vspace{0pt}%
+}
+
+% ─── End of algorithm setup ───────────────────────────────────
+
+
+% Additional margin elimination
+\setlength{\parindent}{0.5pt}
+\setlength{\parskip}{0.5pt}
+\setlength{\baselineskip}{0pt}
 \pagestyle{empty}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0.5pt plus 0.1pt minus 0.1pt}
 
-% Additional horizontal compression
-\setlength{\tabcolsep}{1pt}  % Reduce table column separation
-\renewcommand{\arraystretch}{0.8} % Compress table rows vertically
+% Fix fbox overlapping issues
+\setlength{\fboxrule}{0.4pt}  % Thinner border
+\setlength{\fboxsep}{1pt}     % Less padding inside box
 
-% Reduce spacing in lists
-\setlist{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=*}
-\AtBeginEnvironment{enumerate}{\setlength{\itemsep}{-2pt}}
-\AtBeginEnvironment{itemize}{\setlength{\itemsep}{-2pt}}
+% Maximize text width
+\setlength{\textwidth}{\paperwidth}
+\setlength{\textheight}{\paperheight}
 
-% Reduce spacing in multicols
-\setlength{\multicolsep}{0pt}
-\setlength{\columnsep}{3pt}
-
-% Compact section titles
-\titlespacing*{\section}{0pt}{0pt}{0pt}
-\titlespacing*{\subsection}{0pt}{0pt}{0pt}
-
-% Custom commands for algorithm blocks
-\newcommand{\algoblock}[3]{%
-  \begin{minipage}[t]{#1\textwidth}
-    \setlength{\baselineskip}{0.8\baselineskip}
-    \vspace{0pt}\textbf{#2}\\[0.3ex]
-    #3
-  \end{minipage}
-}
-
-\newcommand{\imageblock}[2]{%
-  \begin{minipage}[t]{#1\textwidth}
-    \vspace{0pt}\includegraphics[width=\linewidth]{#2}
-  \end{minipage}
-}
-
-\newcommand{\theoremblock}[3]{%
-  \begin{minipage}[t]{#1\textwidth}
-    \setlength{\baselineskip}{0.8\baselineskip}
-    \vspace{0pt}\textbf{#2}\\[0.3ex]
-    \justifying
-    #3
-  \end{minipage}
-}
+% Remove default spacing from center environment
+\let\oldcenter\center
+\let\endoldcenter\endcenter
+\renewenvironment{center}{\oldcenter\vspace{-\topsep}\vspace{-\partopsep}}{\vspace{-\topsep}\vspace{-\partopsep}\endoldcenter}
 
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Title page
 \input{sections/titlepage}
-
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\tiny
-\vspace*{-13px}
-% First row - Asymptotic Notation and Master Theorem
-\input{sections/asymptotic_notation}
+\vspace*{-15px}
+\noindent
+   \columnratio{0.31,0.28,0.35}
+\begin{paracol}{3}
+\setlength{\columnsep}{3pt}
+\fbox{
+\begin{minipage}[t]{1\linewidth}
+\textbf{Master Theorem}\\
+If $T(n) =aT\left(\frac{n}{b}\right) + f(n)$, $a \geq 1$, $b > 1$, and $f(n)$ asymptotically positive.\\
+\textbf{Case 1: }If $f(n) = O(n^{\log_b a - \epsilon})$ for some $\epsilon > 0$, then $T(n) = \Theta(n^{\log_b a})$.\\
+\textbf{Case 2: }If $f(n) = \Theta(n^{\log_b a})$, then $T(n) = \Theta(n^{\log_b a}\log n)$.\\
+\textbf{Case 3: }If $f(n) = \Omega(n^{\log_b a + \epsilon})$ for some $\epsilon > 0$, and if $a\, f\left(\frac{n}{b}\right) \leq c\, f(n)$ for some $c < 1$ and all sufficiently large $n$, then $T(n) = \Theta(f(n))$.\\
+\noindent
+    \begin{center}
+    \textbf{Common case - if $f(n) = \Theta(n^d)$ for some exponent $d$:}\\[0.3em]
+    \end{center}
+- If $\frac{a}{b^d} < 1$ (or $d > \log_b a$), then $T(n) = \Theta(n^d)$.\\
+- If $\frac{a}{b^d} = 1$ (or $d = \log_b a$), then $T(n) = \Theta(n^d \log n)$.\\
+- If $\frac{a}{b^d} > 1$ (or $d < \log_b a$), then $T(n) = \Theta(n^{\log_b a})$.
+    \end{minipage}
+    }\\
+  \fbox{
+      \begin{minipage}[t]{1\linewidth}
+          \textbf{Queue Operations}\\        
+          \textbf{Queue-Empty(Q):} \textit{Time: O(1), Auxiliary Space: O(1)}\\
+          1. Returns TRUE if the queue is empty (Q.head = Q.tail).\\
+          2. Returns FALSE otherwise.\\
+          \textbf{Enqueue(Q, x):} \textit{Time: O(1), Auxiliary Space: O(1)}\\
+          1. Adds element x to the rear of queue Q.\\
+          2. Q[Q.tail] = x\\
+          3. Q.tail = Q.tail + 1 (or wrap around if using circular array)\\
+          \textbf{Dequeue(Q):} \textit{Time: O(1), Auxiliary Space: O(1)}\\
+          1. If Queue-Empty(Q), return error "underflow".\\
+          2. Otherwise, remove and return the element at the front.\\
+          3. x = Q[Q.head]\\
+          4. Q.head = Q.head + 1 (or wrap around)\\
+          5. Return x\\
+          \textbf{Queue Implementation:}\\
+          1. Q.head: Index of the front element\\
+          2. Q.tail: Index where next element will be inserted\\
+          3. In a circular array, indices wrap around\\
+          4. Leave one slot empty to distinguish full/empty states
+  
+          \textit{Overall Space Complexity:} \(O(n)\) for a queue of capacity n
+      \end{minipage}
+  }
+
+  \fbox{
+  \begin{minipage}[t]{1\linewidth}
+    \textbf{Merge Sort}\\
+      \begin{minipage}[t]{0.6\textwidth}
+   1. \textbf{Divide}: Split the array evenly into two smaller subarrays, and continue dividing recursively.\\
+   2. \textbf{Sort (Recursively)}: Apply merge sort recursively on each subarray until each has only one element (base case).\\[-10px]
+   \begin{minipage}[t]{0.6\textwidth}
+   \algocode{merge-sort}
+   \end{minipage}\\[-22px]
+   3. \textbf{Merge}: Combine the two sorted subarrays into a single sorted array:
+          \begin{enumerate}[noitemsep, topsep=0pt, leftmargin=3pt, rightmargin=0pt]
+              \item[]a) Initializing pointers at the start of each subarray.
+              \item[]b) Comparing the elements pointed to, and appending the smaller one into a new array.
+              \item[]c) Advancing the pointer in the subarray from which the element was chosen.
+              \item[]d) Repeating this process until all elements in both subarrays are merged into the sorted array.
+          \end{enumerate}
+      \textit{Merge Cost Complexity:} \(O(n)\) per merge operation.\\
+  \textit{Time Complexity:} \(O(n \log n)\) \\ \textit{Space Complexity:} \(O(n)\)
+      \end{minipage}
+      \hfill
+      \begin{minipage}[t]{0.39\textwidth}
+    \algocode{merge}
+      \end{minipage}
+      \vspace*{-10px}
+      \end{minipage}
+  }
+
+  \fbox{
+     \begin{minipage}[t]{1\linewidth}{
+      \textbf{Priority Queue}\\
+      Maintains a dynamic set of elements with associated priority values (keys).\\
+      
+      \textbf{Maximum(S):} Return element of S with highest priority (return A[1], complexity $O(1)$)\\
+      
+      \textbf{Insert(S,x):} Insert element x into set S\\
+      1. Increment the heap size\\
+      2. Insert a new node in the last position in the heap, with key $-\infty$\\
+      3. Increase the $-\infty$ value to key using Heap-Increase-Key\\
+      
+      \textbf{Extract-Max(S):} Remove and return element of S with highest priority\\
+      1. Make sure heap is not empty\\
+      2. Make a copy of the maximum element (the root)\\
+      3. Make the last node in the tree the new root\\
+      4. Re-heapify the heap, with one fewer node\\
+      5. Return the copy of the maximum element\\
+      
+      \textbf{Increase-Key(S,x,k):} Increase the value of element x's key to the new value k\\
+      1. Make sure key $\geq$ A[i]\\
+      2. Update A[i]'s value to key\\
+      3. Traverse the tree upward comparing new key to the parent and swapping if necessary\\
+      \textit{Time Complexity:} Insert, Extract-Max, Increase-Key: $O(\log n)$ \quad Maximum: $O(1)$
+      \textit{Space Complexity:} $O(n)$}
+     \end{minipage}
+  }\\
+  \fbox{
+  \begin{minipage}[t]{1\linewidth}
+    \textbf{Stack Operations}\\
+    \textbf{Stack-Empty(S):} \textit{Time: O(1), Auxiliary Space: O(1)}\\[1pt]
+    1. Returns TRUE if the stack is empty.\\
+    2. Returns FALSE otherwise.\\[1pt]
+    \textbf{Push(S, x):} \textit{Time: O(1), Auxiliary Space: O(1)}\\
+    1. Adds element x to the top of stack S.\\
+    2. Increments the stack pointer.\\[1pt]
+    \textbf{Pop(S):} \textit{Time: O(1), Auxiliary Space: O(1)}\\
+    1. If Stack-Empty(S), return error "underflow".\\
+    2. Otherwise, remove and return the top element.\\
+    3. Decrements the stack pointer.\\[1pt]
+    \textbf{Stack Implementation:}\\
+    1. Elements are stored in a simple array\\
+    2. S.top: Index of the topmost element\\
+    3. An empty stack has S.top = 0 or S.top = -1 (implementation dependent)\\
+    \textit{Overall Space Complexity:} \(O(n)\) for a stack of size n
+  \end{minipage}
+  }\\
+  \fbox{
+    \begin{minipage}[t]{1\linewidth}
+      \textbf{Dynamic Programming}\\
+      \begin{minipage}[t]{0.49\linewidth}
+    \textbf{Problem:} Optimal solutions to overlapping subproblems\\
+    \textbf{Fibonacci Sequence:}\\
+    \textbf{Top-Down (Memoization):}\\
+    1. Create memo array $F[0...n]$ initialized to NIL\\
+    2. Base cases: $F[0] = 0$, $F[1] = 1$\\
+    3. Recursive with memo:\\
+    - Return $F[n]$ if already computed\\
+    - Otherwise compute \\$F[n] = F[n-1] + F[n-2]$\\
+    - Store result in $F[n]$ and return\\[-15px]
+    \algocode{fib-memoized}\vspace*{-25px}
+    \textbf{Bottom-Up (Tabulation):}\\
+    1. Create array $F[0...n]$\\
+    2. Base cases: $F[0] = 0$, $F[1] = 1$\\
+    3. For $i = 2$ to $n$:\\
+    - Compute $F[i] = F[i-1] + F[i-2]$\\
+    4. Return $F[n]$\\[-15px]
+    \algocode{fib-bottom-up}\vspace*{-20px}
+    \textbf{Time Complexity:} $O(n)$\\
+    \textbf{Space Complexity:} $O(n)$ \\(includes input and memo array)
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.49\linewidth}
+    \textbf{Cut-Rod Problem:}\\
+    Find optimal way to cut rod to maximize revenue\\
+    \textbf{Top-Down (Memoization):}\\
+    1. Create memo array $r[0...n]$ with $r[0] = 0$\\
+    2. For uncalculated $r[j]$, compute:\\
+    $r[j] = \max_{1\leq i\leq j}(p[i] + r[j-i])$\\
+    3. Return $r[n]$\\[-17px]
+    \algocode{rod-memoized}\vspace*{-25px}
+    \textbf{Bottom-Up (Tabulation):}\\
+    1. Create array $r[0...n]$ with $r[0] = 0$\\
+    2. For $j = 1$ to $n$:\\
+    - Compute $r[j] = \max_{1\leq i\leq j}(p[i] + r[j-i])$\\
+    3. Return $r[n]$\\[-13px]
+    \algocode{rod-bottom-up}\vspace*{-25px}
+    \textbf{Time Complexity:} $O(n^2)$\\
+    \textbf{Space Complexity:} $O(n)$ \\(includes input prices and array)
+    \end{minipage}
+    \end{minipage}
+    }
+  \switchcolumn[1]
+  \fbox{
+    \begin{minipage}[t]{1\linewidth}
+        \textbf{Akra--Bazzi, Ali Najib Variation:}\\
+        For recurrence $T(n)=\alpha\,T(a\,n)+\beta\,T(b\,n)+\Theta(n^d),$\\where $\alpha,\beta>0$, $a,b\in(0,1)$, $d\ge0$, and unique $p$ with $\alpha\,a^p+\beta\,b^p=1$\\
+        Then:
+        \begin{center}
+        $p>d \Rightarrow T(n)=\Theta(n^p),$\\
+        $p=d \Rightarrow T(n)=\Theta(n^d\log n),$\\
+        $p<d \Rightarrow T(n)=\Theta(n^d).$\\[2px]
+        \end{center}
+        \textbf{If $p$ is not easily found, compare $\alpha\,a^d+\beta\,b^d$ with 1:}\\[2px]
+        \begin{center}
+        $\alpha\,a^d+\beta\,b^d<1 \Rightarrow T(n)=\Theta(n^d),$\\
+        $\alpha\,a^d+\beta\,b^d=1 \Rightarrow T(n)=\Theta(n^d\log n),$\\
+        $\alpha\,a^d+\beta\,b^d>1 \Rightarrow T(n)=\Theta(n^p),$\\[2px]
+        \end{center}
+        with $p$ determined by $\alpha\,a^p+\beta\,b^p=1$.
+        \end{minipage}}\\
+  \fbox{%
+\begin{minipage}[t]{1.02\linewidth}
+\textbf{Insertion Sort.}\\[-10px]
+\begin{minipage}[htp]{0.48\linewidth}
+1 - \textbf{Select the key}\\ 
+Begin with the second element (at index 1) as the \textit{key}.\\[1pt]
+2 - \textbf{Compare and Shift}\\ 
+Compare the key with elements in the sorted section (to its left).\\[1pt]
+3 - \textbf{Shift Elements}\\ 
+If an element is greater than the key, shift that element one position to the right.
+\end{minipage}%
 \hfill
-\input{sections/master_theorem}
-\input{sections/insertion_sort}
-\input{sections/max_subarray}\\
-\input{sections/stack_operations}
-\input{sections/strassen_matrix}
-\input{sections/queue_operations}\\
-\input{sections/merge_sort}
+\begin{minipage}[htp]{0.52\linewidth}
+\algocode{insertion-sort}
+\end{minipage}\\[-10px]
+4 - \textbf{Insert the Key}\\
+Once an element less than or equal to the key is found (or you reach the start), insert the key immediately after that element.\\
+5 - \textbf{Repeat}\\ 
+Move forward to the next element, treating it as the new key, and repeat until the array is sorted.\\
+\textit{Time Complexity:} Worst-case $O(n^2)$, Best-case $O(n)$.\\
+\textit{Space Complexity:} $O(1)$.
+\end{minipage}%
+}\\
+\fbox{
+\begin{minipage}[t]{1\linewidth}
+\textbf{Strassen's Matrix Multiplication}\\
+ \textbf{Divide:} Partition each of \(A, B, C\) into four \(\tfrac{n}{2} \times \tfrac{n}{2}\) submatrices:\\
+$
+        \begin{pmatrix}
+            C_{11} & C_{12} \\
+            C_{21} & C_{22}
+        \end{pmatrix}
+        \;=\;
+        \begin{pmatrix}
+            A_{11} & A_{12} \\
+            A_{21} & A_{22}
+        \end{pmatrix}
+        \cdot
+        \begin{pmatrix}
+            B_{11} & B_{12} \\
+            B_{21} & B_{22}
+        \end{pmatrix}.
+$\\[2pt]
+\begin{minipage}[t]{0.47\textwidth}
+    \textbf{Conquer:} Compute 7 products (recursively on \(\tfrac{n}{2} \times \tfrac{n}{2}\) matrices):\\
+$
+        \begin{aligned}
+        M_1 &:= (A_{11} + A_{22})(B_{11} + B_{22}), \\
+        M_2 &:= (A_{21} + A_{22}) \, B_{11}, \\
+        M_3 &:= A_{11} \,(B_{12} - B_{22}), \\
+        M_4 &:= A_{22} \,(B_{21} - B_{11}), \\
+        M_5 &:= (A_{11} + A_{12}) \, B_{22}, \\
+        M_6 &:= (A_{21} - A_{11}) \,(B_{11} + B_{12}), \\
+        M_7 &:= (A_{12} - A_{22}) \,(B_{21} + B_{22}).
+        \end{aligned}
+$
+\end{minipage}
 \hfill
-\input{sections/priority_queue}\\
-\input{sections/heap}
-\input{sections/operations_summary}\\
-\input{sections/binary_search_tree}
-\hfill
-\input{sections/dynamic_programming}
-\input{sections/longest_common_subsequence}
-\input{sections/optimal_binary_search_tree}
-\input{sections/linked_list}
+\begin{minipage}[t]{0.5\textwidth}
+    \textbf{Combine:} Assemble the resulting submatrices to form \(C\): \\[2px]
+$
+        \begin{aligned}
+        C_{11} &= M_1 + M_4 - M_5 + M_7, \\
+        C_{21} &= M_2 + M_4, \\
+        C_{12} &= M_3 + M_5, \\
+        C_{22} &= M_1 + M_3 - M_2 + M_6.
+        \end{aligned}
+$\\[2px]
+\textit{Time Complexity:} $O(n^{\log_2 7}) \approx O(n^{2.81})$\\
+\textit{Space Complexity:}$O(n^2)$
+        \end{minipage}
+\end{minipage}
+}
+\\
+\fbox{\begin{minipage}[t]{1\linewidth}
+   \textbf{Binary Search Trees (BST)} \\   
+   \begin{minipage}[t]{0.49\linewidth}
+       \textbf{BST-Search}\\
+       \begin{minipage}[t]{\linewidth}
+           1. Start at root\\
+           2. If NULL, return NULL\\
+           3. If key = root's key, return root\\
+           4. If key $<$ root's key, search left\\
+           5. If key $>$ root's key, search right
+       \end{minipage}\\[-10px]
+      \algocode{bst-search}\vspace*{-25px}
+       \textit{Time:} \(O(\log n)\) avg, \(O(h)\) worst\\
+       \textit{Space:} \(O(n)\) for tree, \(O(h)\) auxiliary\\
+       \textbf{BST-Minimum}\\
+       \begin{minipage}[t]{\linewidth}
+           1. Start at root\\
+           2. If NULL, return NULL\\
+           3. Follow left pointers until no left child\\
+           4. Return leftmost node
+       \end{minipage}\\[-10px]
+       \algocode{bst-minimum}\vspace*{-25px}
+       \textit{Time:} \(O(h)\)\\
+       \textit{Space:} \(O(n)\) for tree, \(O(1)\) auxiliary\\
+       \textbf{BST-Maximum}\\
+       \begin{minipage}[t]{\linewidth}
+           1. Start at root\\
+           2. If NULL, return NULL\\
+           3. Follow right pointers until no right child\\
+           4. Return rightmost node
+       \end{minipage}\\[-10px]
+       \algocode{bst-maximum}\vspace*{-25px}
+       \textit{Time:} \(O(h)\)\\
+       \textit{Space:} \(O(n)\) for tree, \(O(1)\) auxiliary\\
+       \textbf{BST-Successor}\\
+       \begin{minipage}[t]{\linewidth}
+           1. If right subtree exists:\\
+           \quad Return minimum in right subtree\\
+           2. Otherwise:\\
+           \quad Find first ancestor where\\
+           \quad node is in left subtree
+       \end{minipage}\\[-10px]
+       \algocode{bst-successor}\vspace*{-25px}
+       \textit{Time:} \(O(h)\)\\
+       \textit{Space:} \(O(n)\) for tree, \(O(1)\) auxiliary\\
+       \textbf{BST-Insert}\\
+       \begin{minipage}[t]{\linewidth}
+           1. Create new node z with key\\
+           2. Start at root, track parent y = NIL\\
+           3. Move down tree (left if key < node key, right otherwise)\\
+           4. Once NULL found, link z as child of y\\
+           5. If y is NIL, z becomes root\\
+           6. Otherwise, insert z as left or right child based on key comparison
+       \end{minipage}\\[-10px]
+       \algocode{bst-insert}\vspace*{-25px}
+       \textit{Time:} \(O(h)\)\\
+       \textit{Space:} \(O(n)\) for tree, \(O(1)\) auxiliary
+   \end{minipage}
+   \hfill
+   \begin{minipage}[t]{0.5\linewidth}
+       \textbf{BST-Postorder}\\
+       \begin{minipage}[t]{\linewidth}
+           1. Recursively traverse left\\
+           2. Recursively traverse right\\
+           3. Visit current node\\
+           \textit{(Children first, then root)}
+       \end{minipage}\\[-10px]
+       \algocode{bst-postorder}\vspace*{-25px}
+       \textit{Time:} \(O(n)\)\\
+       \textit{Space:} \(O(n)\) for tree, \(O(h)\) auxiliary\\
+       \textbf{BST-Inorder}\\
+       \begin{minipage}[t]{\linewidth}
+           1. Recursively traverse left\\
+           2. Visit current node\\
+           3. Recursively traverse right\\
+           \textit{(Visits nodes in sorted order)}
+       \end{minipage}\\[-10px]
+       \algocode{bst-inorder}\vspace*{-25px}
+       \textit{Time:} \(O(n)\)\\
+       \textit{Space:} \(O(n)\) for tree, \(O(h)\) auxiliary\\
+       \textbf{BST-Preorder}\\
+       \begin{minipage}[t]{\linewidth}
+           1. Visit current node\\
+           2. Recursively traverse left\\
+           3. Recursively traverse right\\
+           \textit{(Root first, then children)}
+       \end{minipage}\\[-10px]
+       \algocode{bst-preorder}\vspace*{-25px}
+       \textit{Time:} \(O(n)\)\\
+       \textit{Space:} \(O(n)\) for tree, \(O(h)\) auxiliary\\
+       \textbf{BST-Transplant}\\
+       \begin{minipage}[t]{\linewidth}
+           Replace subtree at u with v:\\
+           1. If u is root, set v as root\\
+           2. If u is left child, make v left child of u's parent\\
+           3. Else make v right child of u's parent\\
+           4. Set v's parent to u's parent
+       \end{minipage}\\[-10px]
+       \algocode{bst-transplant}\vspace*{-25px}
+       \textit{Time:} \(O(1)\)\\
+       \textit{Space:} \(O(n)\) for tree, \(O(1)\) auxiliary\\
+       \textbf{BST-Delete}\\
+       \begin{minipage}[t]{\linewidth}
+           1. If z has no left: transplant right\\
+           2. If z has no right: transplant left\\
+           3. With both children:\\
+           \quad a. Find successor y\\
+           \quad b. Handle y's children\\
+           \quad c. Replace z with y
+       \end{minipage}\\[-10px]
+       \algocode{bst-delete}\vspace*{-25px}
+       \textit{Time:} \(O(h)\)\\
+       \textit{Space:} \(O(n)\) for tree, \(O(1)\) auxiliary
+   \end{minipage}
+   \vspace{2pt}
+       \hrule
+       \vspace{2pt}
+       \textbf{Properties:}\\
+- Left subtree: all keys < node's key\\
+- Right subtree: all keys > node's key\\
+- Left and right subtrees are also BSTs\\
+- A \textbf{Node} has: \textbf{key} (value), \textbf{left} \& \textbf{right} (child pointers), \textbf{parent} (optional)\\
+- Tree height \textbf{h}: length of longest path from root to leaf\\
+\end{minipage}} 
+  \switchcolumn[2]
+\fbox{
+  \begin{minipage}[t]{1\linewidth}
+  \textbf{Big-O}\\
+  If $\exists c>0$ and $\exists n_0>0$, $0\le f(n)\le c\cdot g(n)$ $\forall n\ge n_0$, $f(n)=O(g(n))$.\\
+  \textbf{Big-Omega}\\
+  If $\exists c>0$ and $\exists n_0>0$, $0\le c\cdot g(n)\le f(n)$ $\forall n\ge n_0$, $f(n)=\Omega(g(n))$.\\
+  \textbf{Big-Theta}\\
+  If $f(n)=O(g(n))$ and $f(n)=\Omega(g(n))$, $f(n)=\Theta(g(n))$.\\
+  \textbf{Little-o}\\
+  If $\forall c>0$ $\exists n_0>0$, $0\le f(n)< c\cdot g(n)$ $\forall n\ge n_0$, $f(n)=o(g(n))$.\\
+  \textbf{Relations}\\
+  $f(n)=o(g(n)) \implies f(n)=O(g(n))$\\
+  \textbf{Comparison of Common Functions (Ascending Order)}\\
+  $O(1) \ll O\bigl((\log n)^c\bigr) \ll O\bigl(n^c\bigr)_{0 < c < 1} \ll O(n) \ll O\bigl(n \log n\bigr) \ll O\bigl(n^c\bigr)_{c > 1} \ll O(c^n) \ll O(n!) \ll O(n^n).$
+  \end{minipage}
+  }  \\
+  \fbox{
+  \begin{minipage}[t]{1\linewidth}
+    \textbf{Heap}  \fbox{\begin{minipage}[t]{0.55\linewidth}
+    Root is A[1] \;
+    Left(i) = 2i \; 
+    Right(i) = 2i + 1 \;
+    Parent(i) =$\lfloor i/2 \rfloor$\end{minipage}}\\
+    \begin{minipage}[t]{0.67\textwidth}
+          \textbf{ Max-Heapify (heapify subtree rooted at i)}\\
+          1. Starting at the root\\
+          2. Compare A[i], A[Left(i)], A[Right(i)]\\
+          3. If necessary, swap A[i] with the largest of the two children\\
+          4. \textbf{Max-Heapify} the swapped child\\
+          5. Continue comparing and swapping down the heap until subtree rooted at i is max-heap\\
+          \textit{Time Complexity:} \(O(\log(n))\) \\ \textit{Space Complexity:} \(O(n)\) including heap array, \(O(1)\) auxiliary
+    \end{minipage}
+    \begin{minipage}[t]{0.32\textwidth}
+      \vspace*{-25px}
+      \algocode{heapify}
+      \vspace*{-25px}
+    \end{minipage}\\
+    \begin{minipage}[t]{0.67\textwidth}   
+          \textbf{ Max-Heap-Insert (insert new key into heap)}\\
+          1. Increase heap size: A.heap-size = A.heap-size + 1\\
+          2. Set the last element to negative infinity: A[A.heap-size] = $-\infty$\\
+          3. Call Max-Heap-Increase-Key to update to the correct value\\
+          \textit{Time Complexity:} \(O(\log n)\) \\ \textit{Space Complexity:} \(O(n)\) including heap array, \(O(1)\) auxiliary
+    \end{minipage}
+    \begin{minipage}[t]{0.32\textwidth}
+      \vspace*{-16px}
+      \algocode{heap-insert}
+      \vspace*{-15px}
+    \end{minipage}\\
+    \begin{minipage}[t]{0.67\textwidth}
+          \textbf{ Max-Heap-Increase-Key (increase key at position i)}\\
+          1. Ensure new key is larger than current: if key $<$ A[i] then error\\
+          2. Set A[i] = key\\
+          3. Compare with parent and swap if necessary: \\ while i > 1 and A[Parent(i)] < A[i]\\
+          4. Exchange A[i] with A[Parent(i)]\\
+          5. Set i = Parent(i) and continue upward\\
+          \textit{Time Complexity:} \(O(\log n)\) \\ \textit{Space Complexity:} \(O(n)\) including heap array, \(O(1)\) auxiliary
+    \end{minipage}
+    \begin{minipage}[t]{0.32\textwidth}
+      \vspace*{-16px}
+      \algocode{heap-increase-key}
+      \vspace*{-15px}
+    \end{minipage}\\
+   \begin{minipage}[t]{0.67\textwidth}
+          \noindent \textbf{ Build-Max-Heap (build a max-heap from an array)}\\
+          1. Start from the last non-leaf node at index \(\frac{n}{2} - 1\)\\
+          2. Move upwards to the root (index \(0\)) and:\\
+          \\ a. \textbf{Max-Heapify} the current node\\
+          \\ b. Ensure the subtree rooted here satisfies max-heap property\\
+          3. Repeat until the root node is processed\\
+          4. After completion, array \(A\) represents a valid max heap\\
+          \textit{Time Complexity:} \(O(n)\) \\ \textit{Space Complexity:} \(O(n)\) including heap array, \(O(1)\) auxiliary\\
+          \textbf{ Heap Sort}\\
+          \textbf{1. Build a Max Heap:}\\
+          a. Convert the given array into a max heap\\
+          b. Start from the last non-leaf node and heapify upwards\\
+          c. Ensure each parent node is greater than its children\\
+          \textbf{2. Extract Maximum Elements:}\\
+          a. Swap the root (maximum value) with the last element\\
+          b. Reduce heap size by one to exclude the last element\\
+          c. Heapify the root to maintain max heap property\\
+          d. Repeat until heap size becomes 1\\
+          \textbf{3. Final Sorted Array:}\\
+          a. After extraction, the sorted array in ascending order is obtained\\
+          b. Maximum elements are placed at the end\\
+          \textit{Time Complexity:} \(O(n\log n)\) \\ \textit{Space Complexity:} \(O(n)\) including array, \(O(1)\) auxiliary
+      \end{minipage}
+      \hfill
+      \begin{minipage}[t]{0.32\textwidth}
+        \vspace*{-15px}
+        \algocode{build-max-heap}
+        \algocode{heapsort}\vspace*{-30px}
+        \algocode{heap-extract-max}\vspace*{-30px}
+    \end{minipage}
+    \end{minipage}
+  }\\  \fbox{%
+  \begin{minipage}[t]{0.44\textwidth}
+  \begin{minipage}[t]{0.4\textwidth}
+  \textbf{Maximum Subarray Problem}\\
+  \textbf{Problem:} Find contiguous subarray with largest sum\\
+  \textbf{Divide and Conquer Approach:}\\
+  1 - \textbf{Divide.} \\
+  Split array at midpoint\\$\text{mid} = \lfloor(\text{low} + \text{high})/2\rfloor$.\\
+  2 - \textbf{Conquer.} \\
+  Find maximum subarrays recursively
+  \begin{itemize}[leftmargin=0pt,itemsep=0pt,topsep=0pt,parsep=0pt]
+  \item[] Left max: in $A[\text{low}...\text{mid}]$
+  \item[] Right max: in $A[\text{mid}+1...\text{high}]$
+  \item[] Crossing max: spans the midpoint
+  \end{itemize}
+  3 - \textbf{Combine:} Return the largest of the three\\
+  $\max(\text{left\_max}, \text{right\_max}, \text{crossing\_max})$\\
+  \end{minipage}%
+  \begin{minipage}[t]{0.56\textwidth}
+    \vspace{-15px}
+      \algocode{max-subarray}\vspace*{-35px}
+  \end{minipage}\\
+  \begin{minipage}[t]{0.5\textwidth}
+  4 - \textbf{Finding the Crossing Maximum:}\\
+  a. Find maximum suffix in left half (from mid down to low)\\
+  b. Find maximum prefix in right half (from mid+1 up to high)\\
+  c. Crossing max = max suffix + max prefix\\[1pt]
+  \textbf{Crossing Subarray:} The maximum subarray that crosses the midpoint combines the maximum suffix of the left half with the maximum prefix of the right half.\\[2pt]
+  \textit{Time Complexity:} $\Theta(n\log n)$ due to $T(n) = 2T(n/2) + \Theta(n)$\\
+  \textit{Space Complexity:} $O(\log n)$ for recursion stack\\[2pt]
+  \end{minipage}
+  \begin{minipage}[t]{0.5\textwidth}
+    \vspace{-20px}
+  \algocode{max-subarray-crossing}
+  \end{minipage}\vspace*{-23px}
+  \end{minipage}%
+  }\\
+  \fbox{
+    \begin{minipage}[t]{1\linewidth}
+    \textbf{Data Structure Operations Summary}\\
+    \begin{minipage}[t]{1\linewidth}
+    \textbf{Priority Queue Operations}\\
+    \begin{tabular}{|p{0.19\linewidth}|p{0.37\linewidth}|p{0.168\linewidth}|p{0.04\linewidth}|}
+    \hline
+    \textbf{Operation} & \textbf{Description} & \textbf{Time} & \textbf{Space} \\
+    \hline
+    Construction & Create priority queue from array of n elements & $O(n)$ & $O(n)$ \\
+    \hline
+    Maximum(S) & Returns element with highest priority & $O(1)$ & $O(1)$ \\
+    \hline
+    Extract-Max(S) & Removes and returns element with highest priority & $O(\log n)$ & $O(1)$ \\
+    \hline
+    Insert(S, x) & Inserts element x into set S & $O(\log n)$ & $O(1)$ \\
+    \hline
+    Increase-Key(S, x, k) & Increases priority of element x to k & $O(\log n)$ & $O(1)$ \\
+    \hline
+    \end{tabular}\\
+    \textbf{Stack Operations}\\
+    \begin{tabular}{|p{0.19\linewidth}|p{0.37\linewidth}|p{0.168\linewidth}|p{0.04\linewidth}|}
+    \hline
+    \textbf{Operation} & \textbf{Description} & \textbf{Time} & \textbf{Space} \\
+    \hline
+    Construction & Create stack from array of n elements & $O(n)$ & $O(n)$ \\
+    \hline
+    Stack-Empty(S) & Returns TRUE if stack is empty, FALSE otherwise & $O(1)$ & $O(1)$ \\
+    \hline
+    Push(S, x) & Adds element x to top of stack S & $O(1)$ & $O(1)$ \\
+    \hline
+    Pop(S) & Removes and returns top element from stack S & $O(1)$ & $O(1)$ \\
+    \hline
+    \end{tabular}\\
+    \textbf{Heap Operations}\\
+    \begin{tabular}{|p{0.19\linewidth}|p{0.37\linewidth}|p{0.168\linewidth}|p{0.04\linewidth}|}
+    \hline
+    \textbf{Operation} & \textbf{Description} & \textbf{Time} & \textbf{Space} \\
+    \hline
+    Construction & Create heap from array of n elements & $O(n)$ & $O(n)$ \\
+    \hline
+    Max-Heapify(A, i) & Maintains max-heap property at node i & $O(\log n)$ & $O(1)$ \\
+    \hline
+    Build-Max-Heap(A,n) & Converts array A of n elements into max heap & $O(n)$ & $O(1)$ \\
+    \hline
+    Heap-Sort(A, n) & Sorts array A of n elements using heap structure & $O(n \log n)$ & $O(1)$ \\
+    \hline
+    Max-Heap-Insert(A, k) & Inserts key k into heap A & $O(\log n)$ & $O(1)$ \\
+    \hline
+    Heap-Extract-Max(A) & Returns and removes largest element from heap A & $O(\log n)$ & $O(1)$ \\
+    \hline
+    Heap-Increase-Key(A,i,k) & Increases key at index i to new value k & $O(\log n)$ & $O(1)$ \\
+    \hline
+    \end{tabular}\\
+    \end{minipage}\\
+    \begin{minipage}[t]{1\linewidth}
+    \textbf{BST Operations}\\
+    \begin{tabular}{|p{0.19\linewidth}|p{0.37\linewidth}|p{0.168\linewidth}|p{0.04\linewidth}|}
+    \hline
+    \textbf{Operation} & \textbf{Description} & \textbf{Time} & \textbf{Space} \\
+    \hline
+    Construction & Create BST from array of n elements & Best: $O(n\log n)$, Worst: $O(n^2)$ & $O(n)$ \\
+    \hline
+    BST-Search(T, k) & Finds node with key k in tree T & $O(h)$ & $O(h)$ \\
+    \hline
+    BST-Minimum(T) & Returns node with smallest key in T & $O(h)$ & $O(1)$ \\
+    \hline
+    BST-Maximum(T) & Returns node with largest key in T & $O(h)$ & $O(1)$ \\
+    \hline
+    BST-Successor(x) & Returns node with smallest key greater than x's key & $O(h)$ & $O(1)$ \\
+    \hline
+    BST-Insert(T, z) & Inserts node z into BST T & $O(h)$ & $O(1)$ \\
+    \hline
+    BST-Delete(T, z) & Removes node z from BST T & $O(h)$ & $O(1)$ \\
+    \hline
+    BST-Inorder(T) & Visits all nodes in sorted order & $O(n)$ & $O(h)$ \\
+    \hline
+    BST-Preorder(T) & Visits root before its children & $O(n)$ & $O(h)$ \\
+    \hline
+    BST-Postorder(T) & Visits children before root & $O(n)$ & $O(h)$ \\
+    \hline
+    \end{tabular}\\
+    \textbf{ Queue Operations}\\
+    \begin{tabular}{|p{0.19\linewidth}|p{0.37\linewidth}|p{0.168\linewidth}|p{0.04\linewidth}|}
+    \hline
+    \textbf{Operation} & \textbf{Description} & \textbf{Time} & \textbf{Space} \\
+    \hline
+    Construction & Create queue from array of n elements & $O(n)$ & $O(n)$ \\
+    \hline
+    Queue-Empty(Q) & Returns TRUE if queue is empty, FALSE otherwise & $O(1)$ & $O(1)$ \\
+    \hline
+    Enqueue(Q, x) & Adds element x to rear of queue Q & $O(1)$ & $O(1)$ \\
+    \hline
+    Dequeue(Q) & Removes and returns front element from queue Q & $O(1)$ & $O(1)$ \\
+    \hline
+    \end{tabular}\\
+    \textbf{Linked List Operations}\\
+    \begin{tabular}{|p{0.19\linewidth}|p{0.37\linewidth}|p{0.168\linewidth}|p{0.04\linewidth}|}
+    \hline
+    \textbf{Operation} & \textbf{Description} & \textbf{Time} & \textbf{Space} \\
+    \hline
+    Construction & Create linked list from array of n elements & $O(n)$ & $O(n)$ \\
+    \hline
+    List-Search(L, k) & Returns pointer to first node with key k, NULL if not found & $O(n)$ & $O(1)$ \\
+    \hline
+    List-Insert(L, x) & Inserts node x at beginning of list L & $O(1)$ & $O(1)$ \\
+    \hline
+    List-Delete(L, x) & Removes node x from list L & $O(n)$ find, $O(1)$ del & $O(1)$ \\
+    \hline
+    \end{tabular}\\
+    \end{minipage}
+    \end{minipage}
+    }
+  \end{paracol}
+  
+  \begin{minipage}[t]{0.32\textwidth}
+    \textbf{Matrix Chain Multiplication:}\\
+    Find optimal parenthesization to minimize multiplications\\
+    \textbf{Bottom-Up (Tabulation):}\\
+    1. Create table $m[1...n, 1...n]$ with $m[i,i] = 0$\\
+       - $m[i,j]$ stores minimal cost of multiplying matrices $i$ through $j$\\
+    2. For $l = 2$ to $n$ (chain length):\\
+    3. For $i = 1$ to $n-l+1$:\\
+    - Set $j = i+l-1$\\
+    - Compute $m[i,j] = \min_{i\leq k<j} \{m[i,k] + m[k+1,j] + p_{i-1}p_kp_j\}$\\
+    - Store $k$ in $s[i,j]$ that achieved minimum cost\\
+    4. Return $m[1,n]$\\[-15px]
+    \algocode{matrix-bottom-up}\vspace*{-25px}
+    \textbf{Complexity:}\\
+    - Time: $O(n^3)$\\
+    - Space: $O(n^2)$ (includes matrix dimensions and tables)\\
+    - Table $s[i,j]$ stores index of last matrix in \\first parenthesized group
+    \end{minipage}
 \end{document} 
