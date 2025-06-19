@@ -1,0 +1,27 @@
+\begin{algorithmic}
+\Function{EditDistance}{$A[1..m], B[1..n]$}
+  \For{$i \gets 0$ to $m$}
+    \State $D[i,0] \gets i$
+  \EndFor
+  \For{$j \gets 0$ to $n$}
+    \State $D[0,j] \gets j$
+  \EndFor
+  \For{$i \gets 1$ to $m$}
+    \For{$j \gets 1$ to $n$}
+      \State $cost \gets (A[i] = B[j]) \;?\; 0 \;:\; 1$
+      \State $del \gets D[i-1,j] + 1$
+      \State $ins \gets D[i,j-1] + 1$
+      \State $sub \gets D[i-1,j-1] + cost$
+      \State $D[i,j] \gets \min\{del, ins, sub\}$
+      \If{$D[i,j] = sub$}
+        \State pointer$(i,j) \gets \nwarrow$
+      \ElsIf{$D[i,j] = del$}
+        \State pointer$(i,j) \gets \uparrow$
+      \Else
+        \State pointer$(i,j) \gets \leftarrow$
+      \EndIf
+    \EndFor
+  \EndFor
+  \Return $D[m,n]$
+\EndFunction
+\end{algorithmic}
