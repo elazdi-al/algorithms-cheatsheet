@@ -1,2 +1,1 @@
 # algorithms-cheatsheet
-Final Exam

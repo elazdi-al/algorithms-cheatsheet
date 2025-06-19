@@ -1,17 +1,9 @@
 \theoremblock{0.3}{\scriptsize Asymptotic Notation}{
-    \tiny
+    \scriptsize
 \textbf{Big-O}\\[1px]
-If $\exists c>0$ and $\exists n_0>0$, $0\le f(n)\le c\cdot g(n)$ $\forall n\ge n_0$, $f(n)=O(g(n))$.\\[1px]
+If $\exists c>0$ and $\exists n_0>0$, $0\le f(n)\le c\cdot g(n)$ $\forall n\ge n_0$, then $f(n)=O(g(n))$.\\[1px]
 \textbf{Big-Omega}\\[1px]
-If $\exists c>0$ and $\exists n_0>0$, $0\le c\cdot g(n)\le f(n)$ $\forall n\ge n_0$, $f(n)=\Omega(g(n))$.\\[1px]
+If $\exists c>0$ and $\exists n_0>0$, $0\le c\cdot g(n)\le f(n)$ $\forall n\ge n_0$, then $f(n)=\Omega(g(n))$.\\[1px]
 \textbf{Big-Theta}\\[1px]
-If $f(n)=O(g(n))$ and $f(n)=\Omega(g(n))$, $f(n)=\Theta(g(n))$.\\[1px]
-\textbf{Little-o}\\[1px]
-If $\forall c>0$ $\exists n_0>0$, $0\le f(n)< c\cdot g(n)$ $\forall n\ge n_0$, $f(n)=o(g(n))$.\\[1px]
-\textbf{Relations}\\[1px]
-$f(n)=o(g(n)) \implies f(n)=O(g(n))$\\]
-\begin{minipage}[t]{3\textwidth}
-\textbf{Comparison of Common Functions (Ascending Order)}\\[-2px]
-$O(1) \ll O\bigl((\log n)^c\bigr) \ll O\bigl(n^c\bigr)_{0 < c < 1} \ll O(n) \ll O\bigl(n \log n\bigr) \ll O\bigl(n^2\bigr) \ll O\bigl(n^c\bigr)_{c > 1} \ll O(c^n) \ll O(n!) \ll O(n^n).$
-\end{minipage}
+If $f(n)=O(g(n))$ and $f(n)=\Omega(g(n))$, then $f(n)=\Theta(g(n))$.
 } 
