@@ -35,7 +35,7 @@
           \textbf{ Max-Heap-Increase-Key (increase key at position i)}\\
           1. Ensure new key is larger than current: if key $<$ A[i] then error\\
           2. Set A[i] = key\\
-          3. Compare with parent and swap if necessary: \\ while i > 1 and A[Parent(i)] < A[i]\\
+          3. Compare with parent and swap if necessary: \\ while i $>$ 1 and A[Parent(i)] $<$ A[i]\\
           4. Exchange A[i] with A[Parent(i)]\\
           5. Set i = Parent(i) and continue upward\\
           \textit{Time Complexity:} \(O(\log n)\) \\ \textit{Space Complexity:} \(O(n)\) including heap array, \(O(1)\) auxiliary

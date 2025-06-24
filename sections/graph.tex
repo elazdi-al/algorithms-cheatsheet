@@ -14,7 +14,10 @@ Find all vertices reachable from a starting vertex s, visiting neighbors level b
 3 - Then visit their unvisited neighbors, marking as distance 2.\\
 4 - Continue this layer-by-layer exploration, incrementing distance at each level.\\
 \textbf{Key Data:} Distance of each node from source is stored and gives shortest path in unweighted graphs.\\
-\textbf{Time Complexity:} $O(V + E)$\\ \textbf{Space Complexity:} $O(V)$\\[-17px]
+\fbox{
+\begin{minipage}[t]{.6\linewidth}
+\textbf{Time Complexity:} $O(V + E)$\\ \textbf{Space Complexity:} $O(V)$
+\end{minipage}}\\[-12px]
 \algocode{bfs}
 \end{minipage}
 \begin{minipage}[t]{0.45\linewidth}
@@ -29,10 +32,13 @@ Explore a graph by going as deep as possible along each path before backtracking
 4 - Recursively visit each WHITE neighbor (ignore GRAY/BLACK).\\
 5 - When done with all neighbors, mark vertex as BLACK (finished), record finish time.\\
 \textbf{Key Data:} Discovery and finish times are kept for each node in DFS. These times help determine ancestor-descendant relationships and can be used for topological sorting.\\
-\textbf{DFS-Visit Time Complexity:} $O(E)$\\
-\textbf{DFS-Visit Space Complexity:} $O(V)$\\
-\textbf{Time Complexity:} $O(V + E)$\\ \textbf{Space Complexity:} $O(V)$\\[-13px]
-
+\begin{minipage}[t]{.56\linewidth}
+\textbf{DFS-Visit Time Comp.} $O(E)$\\
+\textbf{DFS-Visit Space Comp.} $O(V)$
+\end{minipage}\fbox{
+    \begin{minipage}[t]{.43\linewidth}
+\textbf{Time Comp.} $O(V + E)$ \newline
+\textbf{Space Comp.:} $O(V)$\end{minipage}}\\[-13px]
 \begin{minipage}[t]{0.38\linewidth}
 \algocode{dfs}
 \end{minipage}
