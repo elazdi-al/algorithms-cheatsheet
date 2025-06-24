@@ -1,0 +1,23 @@
+Question PCR : Choix de la bonne paire d’amorces
+Question:
+Quelle paire d’amorces permet d’amplifier une séquence donnée par PCR ?
+Méthodologie
+Repérer les extrémités de la séquence cible
+1 - Noter les 14 premières bases → elles correspondent à l’amorce forward
+2 - Noter les 14 dernières bases → elles serviront à créer l’amorce reverse
+3 - Construire les deux amorces
+    Amorce forward = identique au début de la séquence (écrite 5' → 3')
+    Amorce reverse = reverse-complémentaire de la fin de la séquence :
+        Étape 1 : inverser l’ordre des bases (de droite à gauche)
+        Étape 2 : remplacer chaque base par son complément :
+            A ↔ T
+            C ↔ G
+            G ↔ C
+            T ↔ A
+Comparer avec les propositions
+
+
+
+
+
+
